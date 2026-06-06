@@ -1,0 +1,9 @@
+{
+  "name": "tribhuvan-awas-functions",
+  "version": "1.0.0",
+  "description": "Netlify serverless functions — contact form & enquiry handler",
+  "type": "commonjs",
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}

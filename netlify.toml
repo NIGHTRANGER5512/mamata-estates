@@ -1,0 +1,78 @@
+[build]
+  publish   = "dist"
+  command   = "npm ci --prefer-offline && npm run build"
+
+[build.environment]
+  # Pin Node to LTS — avoids version-resolution overhead and ensures cache hits
+  NODE_VERSION = "18"
+  # npm ci is faster than npm install (no lockfile resolution);
+  # --prefer-offline uses the Netlify cache layer before hitting the registry
+  NPM_FLAGS = "--prefer-offline"
+
+[functions]
+  directory = "netlify/functions"
+
+# ── Security headers ─────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Block the site from being embedded in any iframe (clickjacking)
+    X-Frame-Options = "DENY"
+
+    # Prevent MIME-type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Force HTTPS for 2 years, include subdomains, allow preload list
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+    # Send only the origin as referrer (no path/query leakage to third parties)
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Camera only for the AR iframe origin; deny everything else
+    Permissions-Policy = "camera=(\"https://nightranger5512.github.io\"), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), accelerometer=()"
+
+    # Content-Security-Policy:
+    #   script-src  — only our own bundles (no inline scripts, no CDN scripts)
+    #   style-src   — self + Google Fonts CSS + inline (Framer Motion style attrs)
+    #   font-src    — Google Fonts static files
+    #   img-src     — self, data URIs, Unsplash, Google Maps tiles
+    #   frame-src   — Google Maps embed + AR viewer on GitHub Pages
+    #   connect-src — same-origin fetch only (API endpoints)
+    #   object-src  — blocked entirely
+    #   base-uri    — locked to self (prevents base-tag hijacking)
+    #   form-action — locked to self
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://images.unsplash.com https://*.googleapis.com https://maps.gstatic.com https://picsum.photos; frame-src https://maps.google.com https://www.google.com https://nightranger5512.github.io; connect-src 'self'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';"
+    X-Robots-Tag = "index, follow"
+
+# ── Canonical redirect: www → non-www (301 permanent) ────────────────────
+[[redirects]]
+  from   = "https://www.tribhuvanawas.com/*"
+  to     = "https://tribhuvanawas.com/:splat"
+  status = 301
+  force  = true
+
+# ── Remove trailing slashes (keeps URLs canonical for Google) ────────────
+[[redirects]]
+  from   = "/*/"
+  to     = "/:splat"
+  status = 301
+  force  = false
+
+# ── API routes → Netlify Functions ───────────────────────────────────────
+[[redirects]]
+  from   = "/api/contact"
+  to     = "/.netlify/functions/contact"
+  status = 200
+
+[[redirects]]
+  from   = "/api/enquiry"
+  to     = "/.netlify/functions/enquiry"
+  status = 200
+
+# ── SPA fallback — must be last ──────────────────────────────────────────
+# Status 200 (not 301/302) tells Netlify to serve index.html directly.
+# This is what Google needs: a direct 200 response, not a redirect chain.
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

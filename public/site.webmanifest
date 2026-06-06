@@ -1,0 +1,29 @@
+{
+  "name": "Tribhuvan Awas Pvt. Ltd.",
+  "short_name": "Tribhuvan Awas",
+  "description": "RERA-registered real estate developer in Patna, Bihar",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FFFCF8",
+  "theme_color": "#8B1A1A",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
