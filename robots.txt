@@ -1,0 +1,50 @@
+# ── Standard search engines ──────────────────────────────────────────
+User-agent: *
+Allow: /
+
+# ── OpenAI / ChatGPT ─────────────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic / Claude ───────────────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ── Perplexity ───────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── Google Gemini / Bard ─────────────────────────────────────────────
+User-agent: Google-Extended
+Allow: /
+
+# ── Meta AI ──────────────────────────────────────────────────────────
+User-agent: FacebookBot
+Allow: /
+
+# ── Apple ────────────────────────────────────────────────────────────
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Cohere ───────────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ── Common Crawl (used to train many AI models) ──────────────────────
+User-agent: CCBot
+Allow: /
+
+# ── You.com ──────────────────────────────────────────────────────────
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://tribhuvanawas.com/sitemap.xml
