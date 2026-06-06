@@ -282,7 +282,7 @@ function TestimonialCard({ t }) {
             </svg>
           ))}
         </div>
-        <p className="text-secondary/75 text-sm leading-relaxed italic flex-1">"{t.quote}"</p>
+        <p className="text-secondary/85 text-sm leading-relaxed italic flex-1">"{t.quote}"</p>
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-bold text-xs flex-shrink-0">
             {t.initials}
@@ -507,7 +507,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: L + 0.74, duration: 0.7, ease: EASE }}
-                className="text-white/65 text-lg md:text-xl leading-relaxed max-w-lg"
+                className="text-white/80 text-lg md:text-xl leading-relaxed max-w-lg"
               >
                 Premium residences in Patna &amp; Ranchi — RERA verified, structurally certified, delivered on time.
               </motion.p>
@@ -571,7 +571,7 @@ export default function Home() {
                     {s.value}
                   </span>
                   <span className="text-white/85 text-sm font-semibold">{s.label}</span>
-                  <span className="text-white/40 text-[11px] tracking-wider uppercase">{s.sub}</span>
+                  <span className="text-white/65 text-[11px] tracking-wider uppercase">{s.sub}</span>
                 </motion.div>
               ))}
 
@@ -595,7 +595,7 @@ export default function Home() {
                 </div>
                 <div className="px-4 py-3">
                   <p className="text-white/90 font-semibold text-sm leading-snug">Premium Enclave</p>
-                  <p className="text-white/45 text-[11px] mt-0.5">New AG Colony, Patna</p>
+                  <p className="text-white/70 text-[11px] mt-0.5">New AG Colony, Patna</p>
                   <Link to="/projects/hari-enclave-new-ag-colony"
                     className="mt-2.5 inline-flex items-center gap-1.5 text-primary text-[11px] font-bold tracking-wide hover:gap-2.5 transition-all duration-300"
                   >
@@ -836,7 +836,7 @@ export default function Home() {
                       {b.icon}
                     </div>
                     <h4 className="font-semibold text-white text-base leading-snug">{b.title}</h4>
-                    <p className="text-white/50 text-sm leading-relaxed">{b.desc}</p>
+                    <p className="text-white/70 text-sm leading-relaxed">{b.desc}</p>
                   </motion.div>
                 ))}
               </motion.div>

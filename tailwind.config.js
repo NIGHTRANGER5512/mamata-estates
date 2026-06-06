@@ -9,7 +9,7 @@ export default {
         'primary-dark': '#094D36',
         secondary:     '#141A15',
         surface:       '#F7F3EE',
-        muted:         '#7C8A7E',
+        muted:         '#4E6157',
         accent:        '#C09508',
         'accent-light':'#D9B020',
       },

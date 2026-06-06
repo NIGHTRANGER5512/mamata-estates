@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import Navbar from './components/Navbar'
@@ -21,7 +21,7 @@ function ScrollProgress() {
   const scaleX = useSpring(scrollYProgress, { stiffness: 160, damping: 30, restDelta: 0.001 })
   return (
     <motion.div
-      style={{ scaleX, transformOrigin: 'left' }}
+      style={{ scaleX, transformOrigin: '0%' }}
       className="fixed top-0 left-0 right-0 h-[2.5px] z-[9999] pointer-events-none"
       aria-hidden
     >
@@ -30,44 +30,35 @@ function ScrollProgress() {
   )
 }
 
-function AppInner() {
-  const location = useLocation()
-  return (
-    <>
-      <ScrollProgress />
-      <ScrollToTop />
-      <Toaster
-        position="top-right"
-        toastOptions={{
-          duration: 4000,
-          style: { fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '14px' },
-          success: { iconTheme: { primary: '#0D6245', secondary: '#fff' } },
-        }}
-      />
-      <Navbar />
-      <Routes location={location}>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-      <WhatsAppButton />
-      <CookieBanner />
-    </>
-  )
-}
-
 export default function App() {
   return (
     <>
       <PageLoader />
       <Router>
-        <AppInner />
+        <ScrollProgress />
+        <ScrollToTop />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: { fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '14px' },
+            success: { iconTheme: { primary: '#0D6245', secondary: '#fff' } },
+          }}
+        />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+        <WhatsAppButton />
+        <CookieBanner />
       </Router>
     </>
   )
