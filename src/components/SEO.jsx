@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
 
-const SITE_NAME = 'Tribhuvan Awas Pvt. Ltd.'
-const SITE_URL  = 'https://tribhuvanawas.com'
+const SITE_NAME = 'Mamta Estates'
+const SITE_URL  = 'https://mamataestates.in'
 
-const DEFAULT_TITLE = 'Tribhuvan Awas Pvt. Ltd. | Real Estate Developer in Patna, Bihar'
+const DEFAULT_TITLE = 'Mamta Estates | Real Estate Advisory in Patna, Bihar'
 const DEFAULT_DESC  =
-  'RERA-registered real estate developer and construction company in Patna, Bihar since 2004. Premium 2 BHK & 3 BHK residential apartments with on-time delivery and transparent pricing.'
+  'RERA-verified real estate advisory and property consultancy on Boring Road, Patna. Expert guidance for buying residential and commercial properties in Bihar since 2003.'
 const DEFAULT_KEYWORDS =
-  'real estate developer Patna, real estate agent Patna, property developer Patna Bihar, apartments in Patna, flats in Patna, 3 BHK flats Patna, 2 BHK flats Patna, RERA registered builder Patna, construction company Patna, builder in Patna Bihar, Tribhuvan Awas'
+  'real estate Patna, property advisory Patna, apartments in Patna, flats in Patna, 3 BHK flats Patna, 2 BHK flats Patna, RERA verified properties Patna, property consultant Patna Bihar, buy flat Patna, Mamta Estates, Boring Road Patna'
 const DEFAULT_IMAGE = `${SITE_URL}/logo.png`
 
 function setMeta(attr, key, value) {

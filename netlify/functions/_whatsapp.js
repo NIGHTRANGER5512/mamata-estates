@@ -60,7 +60,7 @@ async function sendOwnerWhatsAppAlert({ name, phone, email, message, type, proje
   const time    = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'medium', timeStyle: 'short' })
 
   const text = [
-    `*Tribhuvan Awas — New ${tag}*`,
+    `*Mamta Estates — New ${tag}*`,
     `─────────────────────`,
     `*Name:*    ${safeName}`,
     `*Phone:*   +91-${safePhone}`,
@@ -82,19 +82,18 @@ async function sendCustomerWhatsAppReply({ name, phone }) {
   const text = [
     `Hi ${name}!`,
     ``,
-    `Thank you for reaching out to *Tribhuvan Awas*.`,
+    `Thank you for reaching out to *Mamta Estates*.`,
     ``,
     `We've received your enquiry and our team will contact you within *24 hours*.`,
     ``,
     `━━━━━━━━━━━━━━━━━━━━`,
-    `*Call us:*      +91-9801056929`,
-    `*WhatsApp:*     +91-9234682722`,
-    `*Office:*       Exhibition Road, Patna`,
-    `*Website:*      tribhuvanawas.com`,
+    `*Call us:*      +91 [Contact Number]`,
+    `*Office:*       Boring Road, Patna`,
+    `*Website:*      mamataestates.in`,
     `━━━━━━━━━━━━━━━━━━━━`,
     ``,
-    `_Sapna ho Sakaar Aapka_`,
-    `— *Team Tribhuvan Awas*`,
+    `_Your Home, Our Promise._`,
+    `— *Team Mamta Estates*`,
   ].join('\n')
 
   await twilioPost(encode({ From: process.env.TWILIO_WHATSAPP_FROM, To: `whatsapp:${e164}`, Body: text }))

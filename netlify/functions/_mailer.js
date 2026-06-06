@@ -4,12 +4,12 @@ const nodemailer = require('nodemailer')
 const { escapeHtml } = require('./_utils')
 
 /* ── Config ──────────────────────────────────────────────────────────── */
-const BRAND      = '#C1440E'
-const BRAND_DARK = '#A33A0C'
+const BRAND      = '#126B50'
+const BRAND_DARK = '#0D5340'
 const SENDER     = process.env.SMTP_USER   // must be set in Netlify env vars
 const NOTIFY_TO  = process.env.NOTIFY_EMAIL // must be set in Netlify env vars
-const LOGO_URL   = 'https://tribhuvanawas.com/logo.png'
-const SITE_URL   = 'https://tribhuvanawas.com'
+const LOGO_URL   = 'https://mamataestates.in/logo.png'
+const SITE_URL   = 'https://mamataestates.in'
 
 function createTransporter() {
   return nodemailer.createTransport({
@@ -41,14 +41,14 @@ function wrap(inner) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Tribhuvan Awas</title>
+  <title>Mamta Estates</title>
 </head>
 <body style="margin:0;padding:32px 16px;background:#F2EDE8;font-family:'Helvetica Neue',Arial,sans-serif">
   <div style="max-width:580px;margin:0 auto">
     ${inner}
     <p style="text-align:center;color:#BBB;font-size:10px;margin-top:20px;line-height:1.6">
-      © ${new Date().getFullYear()} Tribhuvan Awas Pvt. Ltd. &nbsp;·&nbsp; CIN: U70100BR2007PTC013168<br>
-      111, 1st Floor, Ashoka Place, Exhibition Road, Patna – 800001
+      © ${new Date().getFullYear()} Mamta Estates &nbsp;·&nbsp; Boring Road, Patna<br>
+      Boring Road, Patna, Bihar – 800001
     </p>
   </div>
 </body>
@@ -64,8 +64,8 @@ async function sendNotificationEmail({ name, phone, email, subject, message, typ
 
   const isEnquiry  = type === 'enquiry'
   const subjectLine = isEnquiry
-    ? `🏠 New Enquiry — ${projectId || 'General'} | Tribhuvan Awas`
-    : `📬 New Contact Form | Tribhuvan Awas`
+    ? `🏠 New Enquiry — ${projectId || 'General'} | Mamta Estates`
+    : `📬 New Contact Form | Mamta Estates`
 
   // Escape all user-supplied values before inserting into HTML (XSS prevention)
   const safeName      = escapeHtml(name)
@@ -99,7 +99,7 @@ async function sendNotificationEmail({ name, phone, email, subject, message, typ
     <!-- Header -->
     <div style="background:linear-gradient(135deg,${BRAND} 0%,${BRAND_DARK} 100%);border-radius:12px 12px 0 0;padding:24px 28px;display:flex;align-items:center;gap:16px">
       <div style="background:#fff;border-radius:10px;padding:8px 12px;display:inline-block">
-        <img src="${LOGO_URL}" alt="Tribhuvan Awas" height="36" style="display:block;height:36px;width:auto">
+        <img src="${LOGO_URL}" alt="Mamta Estates" height="36" style="display:block;height:36px;width:auto">
       </div>
       <div>
         <p style="margin:0;color:rgba(255,255,255,0.75);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px">
@@ -133,7 +133,7 @@ async function sendNotificationEmail({ name, phone, email, subject, message, typ
   `)
 
   await createTransporter().sendMail({
-    from:    `"Tribhuvan Awas Website" <${SENDER}>`,
+    from:    `"Mamta Estates Website" <${SENDER}>`,
     to:      NOTIFY_TO,
     subject: subjectLine,
     html,
@@ -152,7 +152,7 @@ async function sendConfirmationEmail({ name, email }) {
     <!-- Header -->
     <div style="background:linear-gradient(135deg,${BRAND} 0%,${BRAND_DARK} 100%);border-radius:12px 12px 0 0;padding:32px 28px;text-align:center">
       <div style="background:#fff;border-radius:10px;padding:8px 14px;display:inline-block;margin-bottom:16px">
-        <img src="${LOGO_URL}" alt="Tribhuvan Awas" height="40" style="display:block;height:40px;width:auto">
+        <img src="${LOGO_URL}" alt="Mamta Estates" height="40" style="display:block;height:40px;width:auto">
       </div>
       <h1 style="margin:0 0 6px;color:#fff;font-size:22px;font-weight:700">Thank you, ${safeName}! 🙏</h1>
       <p style="margin:0;color:rgba(255,255,255,0.80);font-size:14px">Building Homes. Delivering Trust.</p>
@@ -172,20 +172,20 @@ async function sendConfirmationEmail({ name, email }) {
         <table style="width:100%;border-collapse:collapse">
           <tr>
             <td style="padding:8px 12px 8px 0;width:50%;vertical-align:top">
-              <a href="tel:+919801056929" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+              <a href="mailto:info@mamataestates.in" style="display:flex;align-items:center;gap:10px;text-decoration:none">
                 <div style="width:36px;height:36px;background:${BRAND}15;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">📞</div>
                 <div>
-                  <p style="margin:0;font-size:10px;color:#AAA;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">Phone</p>
-                  <p style="margin:2px 0 0;font-size:14px;font-weight:700;color:${BRAND}">+91-9801056929</p>
+                  <p style="margin:0;font-size:10px;color:#AAA;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">Contact</p>
+                  <p style="margin:2px 0 0;font-size:14px;font-weight:700;color:${BRAND}">+91 [Contact Number]</p>
                 </div>
               </a>
             </td>
             <td style="padding:8px 0 8px 12px;vertical-align:top">
-              <a href="https://wa.me/919234682722" style="display:flex;align-items:center;gap:10px;text-decoration:none">
-                <div style="width:36px;height:36px;background:#1DA85115;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">💬</div>
+              <a href="mailto:info@mamataestates.in" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                <div style="width:36px;height:36px;background:#55555515;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">✉️</div>
                 <div>
-                  <p style="margin:0;font-size:10px;color:#AAA;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">WhatsApp</p>
-                  <p style="margin:2px 0 0;font-size:14px;font-weight:700;color:#1DA851">+91-9234682722</p>
+                  <p style="margin:0;font-size:10px;color:#AAA;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">Email</p>
+                  <p style="margin:2px 0 0;font-size:14px;font-weight:700;color:#555">info@mamataestates.in</p>
                 </div>
               </a>
             </td>
@@ -196,7 +196,7 @@ async function sendConfirmationEmail({ name, email }) {
                 <div style="width:36px;height:36px;background:#55555515;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">📍</div>
                 <div>
                   <p style="margin:0;font-size:10px;color:#AAA;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">Office</p>
-                  <p style="margin:2px 0 0;font-size:13px;color:#444">111, 1st Floor, Ashoka Place, Exhibition Road, Patna – 800001</p>
+                  <p style="margin:2px 0 0;font-size:13px;color:#444">Boring Road, Patna, Bihar – 800001</p>
                 </div>
               </div>
             </td>
@@ -214,8 +214,8 @@ async function sendConfirmationEmail({ name, email }) {
       <!-- RERA note -->
       <div style="margin-top:20px;border-left:3px solid ${BRAND};padding:10px 14px;background:#FFF8F5;border-radius:0 8px 8px 0">
         <p style="margin:0;font-size:11px;color:#888;line-height:1.6">
-          <strong style="color:#555">Tribhuvan Awas Pvt. Ltd.</strong> &nbsp;·&nbsp; RERA Registered &nbsp;·&nbsp; Est. 2004<br>
-          CIN: U70100BR2007PTC013168 &nbsp;·&nbsp; Bihar RERA: BRERAP00125
+          <strong style="color:#555">Mamta Estates</strong> &nbsp;·&nbsp; RERA Verified &nbsp;·&nbsp; Est. 2003<br>
+          Boring Road, Patna, Bihar – 800001 &nbsp;·&nbsp; mamataestates.in
         </p>
       </div>
     </div>
@@ -226,9 +226,9 @@ async function sendConfirmationEmail({ name, email }) {
   `)
 
   await createTransporter().sendMail({
-    from:    `"Tribhuvan Awas Pvt. Ltd." <${SENDER}>`,
+    from:    `"Mamta Estates Pvt. Ltd." <${SENDER}>`,
     to:      safeRecipient,
-    subject: '✅ Enquiry received — Tribhuvan Awas',
+    subject: '✅ Enquiry received — Mamta Estates',
     html,
   })
   console.log('[mailer] Confirmation email sent') // do not log recipient address (PII)

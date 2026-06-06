@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-// WhatsApp number for chat redirect
-const WA_NUMBER  = '919234682722'   // +91 9234682722
+// WhatsApp number for chat redirect — update WA_NUMBER with Mamta Estates' WhatsApp
+const WA_NUMBER  = '91XXXXXXXXXX'   // TODO: replace with actual WhatsApp number
 const WA_MESSAGE = encodeURIComponent(
-  'Hello! I am interested in your projects at Tribhuvan Awas. Could you please share more details?'
+  'Hello! I am interested in properties listed by Mamta Estates. Could you please share more details?'
 )
 const WA_URL = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`
 

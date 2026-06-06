@@ -2,9 +2,9 @@
 
 /* ── Allowed origins ─────────────────────────────────────────────────── */
 const ALLOWED_ORIGINS = [
-  'https://tribhuvanawas.com',
-  'https://www.tribhuvanawas.com',
-  'https://tribhuvan-awas.netlify.app',
+  'https://mamataestates.in',
+  'https://www.mamataestates.in',
+  'https://mamata-estates.netlify.app',
   'http://localhost:5173',
   'http://localhost:4173',
 ]

@@ -8,7 +8,7 @@ const sections = [
     content: (
       <>
         <p>
-          Tribhuvan Awas Pvt. Ltd. (CIN: U70100BR2007PTC013168), a Private Limited Company incorporated under the Companies Act, 1956, and registered with the Registrar of Companies, Patna, Bihar, with its registered office at 111, 1st Floor, Ashoka Place, Exhibition Road, Patna – 800001 ("the Company", "we", "us", or "our"), is committed to protecting the privacy of all individuals who interact with our website and services.
+          Mamta Estates (mamataestates.in), a Private Limited Company incorporated under the Companies Act, 1956, and registered with the Registrar of Companies, Patna, Bihar, with its registered office at Boring Road, Patna, Bihar – 800001 ("the Company", "we", "us", or "our"), is committed to protecting the privacy of all individuals who interact with our website and services.
         </p>
         <p className="mt-3">
           This Privacy Policy describes how we collect, use, store, and protect personal information you provide when you visit our website or submit an enquiry about our real estate projects. By using our website, you consent to the practices described in this policy. If you do not agree with any part of this policy, please discontinue use of our website.
@@ -143,7 +143,7 @@ const sections = [
           ))}
         </ul>
         <p className="mt-3">
-          Once you leave our website and navigate to a third-party website, this Privacy Policy no longer applies. We strongly encourage you to review the privacy policies of any third-party websites you visit. Tribhuvan Awas Pvt. Ltd. accepts no responsibility or liability for the privacy practices, content, or data collection activities of any third-party website or service.
+          Once you leave our website and navigate to a third-party website, this Privacy Policy no longer applies. We strongly encourage you to review the privacy policies of any third-party websites you visit. Mamta Estates accepts no responsibility or liability for the privacy practices, content, or data collection activities of any third-party website or service.
         </p>
       </>
     ),
@@ -154,10 +154,10 @@ const sections = [
     content: (
       <>
         <p>
-          Our website and services are intended exclusively for adults who are at least 18 years of age. The real estate services offered by Tribhuvan Awas Pvt. Ltd. are not directed at, and are not intended for use by, children under the age of 18.
+          Our website and services are intended exclusively for adults who are at least 18 years of age. The real estate services offered by Mamta Estates are not directed at, and are not intended for use by, children under the age of 18.
         </p>
         <p className="mt-3">
-          We do not knowingly collect, process, or store any personal information from individuals under the age of 18. If we become aware that we have inadvertently received personal data from a person under 18, we will take immediate steps to delete such information from our records. If you believe we have inadvertently collected information from a minor, please contact us immediately at anilranjan5512@gmail.com.
+          We do not knowingly collect, process, or store any personal information from individuals under the age of 18. If we become aware that we have inadvertently received personal data from a person under 18, we will take immediate steps to delete such information from our records. If you believe we have inadvertently collected information from a minor, please contact us immediately at info@mamataestates.in.
         </p>
       </>
     ),
@@ -185,8 +185,8 @@ const sections = [
         </ul>
         <p className="mt-3">
           To exercise any of these rights, please contact us in writing at{' '}
-          <a href="mailto:anilranjan5512@gmail.com" className="text-primary hover:underline">
-            anilranjan5512@gmail.com
+          <a href="mailto:info@mamataestates.in" className="text-primary hover:underline">
+            info@mamataestates.in
           </a>{' '}
           or at our registered office address. We will respond to your request within a reasonable time and in accordance with applicable law.
         </p>
@@ -199,7 +199,7 @@ const sections = [
     content: (
       <>
         <p>
-          This Privacy Policy and all matters relating to the collection, use, storage, and processing of personal data by Tribhuvan Awas Pvt. Ltd. are governed by and construed in accordance with the laws of the Republic of India, including the Information Technology Act, 2000, and its associated rules and regulations.
+          This Privacy Policy and all matters relating to the collection, use, storage, and processing of personal data by Mamta Estates are governed by and construed in accordance with the laws of the Republic of India, including the Information Technology Act, 2000, and its associated rules and regulations.
         </p>
         <p className="mt-3">
           Any dispute arising out of or in connection with this Privacy Policy, including any question regarding its existence, validity, or interpretation, shall be subject to the exclusive jurisdiction of the competent courts located in Patna, Bihar, India.
@@ -213,7 +213,7 @@ const sections = [
     content: (
       <>
         <p>
-          Tribhuvan Awas Pvt. Ltd. reserves the right to update, amend, or modify this Privacy Policy at any time to reflect changes in our practices, legal requirements, or regulatory obligations. Any changes will be effective upon posting the revised policy on our website. The "Last Updated" date at the top of this page will be revised accordingly.
+          Mamta Estates reserves the right to update, amend, or modify this Privacy Policy at any time to reflect changes in our practices, legal requirements, or regulatory obligations. Any changes will be effective upon posting the revised policy on our website. The "Last Updated" date at the top of this page will be revised accordingly.
         </p>
         <p className="mt-3">
           We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information. Continued use of our website following the posting of changes constitutes your acceptance of those changes.
@@ -233,17 +233,17 @@ const sections = [
           If you have any questions, concerns, or requests regarding this Privacy Policy or the way we handle your personal data, please contact us using the details below:
         </p>
         <div className="mt-4 bg-surface rounded-xl border border-gray-200 p-5 flex flex-col gap-2 text-sm">
-          <p className="font-semibold text-secondary font-display text-base">Tribhuvan Awas Pvt. Ltd.</p>
-          <p className="text-muted">111, 1st Floor, Ashoka Place, Exhibition Road, Patna – 800001, Bihar, India</p>
+          <p className="font-semibold text-secondary font-display text-base">Mamta Estates</p>
+          <p className="text-muted">Boring Road, Patna, Bihar – 800001, Bihar, India</p>
           <p className="text-muted">
             Phone:{' '}
-            <a href="tel:+919801056929" className="text-primary hover:underline">+91-9801056929</a>
+            <a href="mailto:info@mamataestates.in" className="text-primary hover:underline">info@mamataestates.in</a>
           </p>
           <p className="text-muted">
             Email:{' '}
-            <a href="mailto:anilranjan5512@gmail.com" className="text-primary hover:underline">anilranjan5512@gmail.com</a>
+            <a href="mailto:info@mamataestates.in" className="text-primary hover:underline">info@mamataestates.in</a>
           </p>
-          <p className="text-muted">CIN: U70100BR2007PTC013168</p>
+          <p className="text-muted">mamataestates.in</p>
         </div>
       </>
     ),
@@ -253,7 +253,7 @@ const sections = [
 export default function PrivacyPolicy() {
   return (
     <main className="pt-20">
-      <SEO title="Privacy Policy" description="Privacy Policy for Tribhuvan Awas Pvt. Ltd. — how we collect, use, and protect your personal information." noIndex />
+      <SEO title="Privacy Policy" description="Privacy Policy for Mamta Estates — how we collect, use, and protect your personal information." noIndex />
       {/* Hero */}
       <section
         className="relative h-56 md:h-72 flex items-end bg-cover bg-center"
@@ -274,7 +274,7 @@ export default function PrivacyPolicy() {
       <div className="bg-surface border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-6 py-5">
           <p className="text-muted text-sm leading-relaxed">
-            This Privacy Policy explains how <strong className="text-secondary">Tribhuvan Awas Pvt. Ltd.</strong> collects, uses, and protects your personal information. Please read this document carefully. <span className="text-primary font-medium">Last Updated: May 2026.</span>
+            This Privacy Policy explains how <strong className="text-secondary">Mamta Estates</strong> collects, uses, and protects your personal information. Please read this document carefully. <span className="text-primary font-medium">Last Updated: May 2026.</span>
           </p>
         </div>
       </div>

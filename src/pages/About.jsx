@@ -44,25 +44,25 @@ function StatItem({ end, suffix, label }) {
 }
 
 const timeline = [
-  { year: '1987', title: 'Tribhuvan Brand Founded', desc: 'The Tribhuvan brand was established in Patna with a singular focus: delivering quality construction and civil engineering in Bihar.' },
-  { year: '2007', title: 'Tribhuvan Awas Pvt. Ltd. Incorporated', desc: 'Formally incorporated as a Private Limited Company under CIN U70100BR2007PTC013168, registered with the RoC Patna.' },
-  { year: '2018', title: 'RERA Registration — Shivam Residency', desc: 'Tribhuvan Shivam Residency registered under Bihar RERA (ID: BRERAP00125-1/347/R-124/2018), setting the standard for transparent development.' },
-  { year: '2021', title: 'On-Time Possession — Shivam Residency', desc: 'Possession of all 16 units at Shivam Residency commenced January 2021, as committed — reinforcing the brand\'s on-time delivery promise.' },
-  { year: '2023', title: 'Launch of Tribhuvan Hari Enclave', desc: 'Launched in February 2023 in New AG Colony, Patna. RERA registered under ID: BRERAP00125-2/15/R-1539/2023.' },
+  { year: '2003', title: 'Mamta Estates Founded', desc: 'Mamta Estates was established on Boring Road, Patna with a singular focus: honest, family-first real estate advisory for buyers and investors in Bihar.' },
+  { year: '2008', title: 'Expansion Across Patna', desc: 'Grew our portfolio to cover Patna\'s key residential corridors — Boring Road, New AG Colony, Patliputra Colony, Rajendra Nagar, and beyond.' },
+  { year: '2016', title: 'RERA Era: Championing Compliance', desc: 'As Bihar RERA came into force, Mamta Estates became one of Patna\'s first advisories to exclusively list and recommend RERA-registered projects — protecting buyer investments.' },
+  { year: '2020', title: 'Digital Advisory Launch', desc: 'Launched our digital platform to serve Patna\'s home-seekers online, bringing verified listings and expert guidance to every screen.' },
+  { year: '2023', title: '20 Years of Trusted Service', desc: 'Completed two decades of guiding families and investors in Patna\'s property market — with a reputation built on transparency, accuracy, and genuine care.' },
 ]
 
 const team = [
   {
-    name: 'Anil Kumar Ranjan',
-    designation: 'Managing Director',
-    bio: 'A seasoned professional with deep roots in Bihar\'s construction and real estate sector. Anil Kumar Ranjan leads the strategic vision of Tribhuvan Awas, ensuring every project reflects the brand\'s founding philosophy of structural excellence, legal compliance, and customer-first delivery.',
-    initials: 'AK',
+    name: 'Senior Property Advisor',
+    designation: 'Head of Residential Sales',
+    bio: 'Our senior advisory team brings over 15 years of direct experience in Patna\'s residential property market. Deep knowledge of Boring Road, New AG Colony, and Patliputra corridors — guiding families to the right home at the right price.',
+    initials: 'ME',
   },
   {
-    name: 'Shobha Kumari',
-    designation: 'Director',
-    bio: 'Director of Tribhuvan Awas Pvt. Ltd., Shobha Kumari oversees operational governance and administration, ensuring the company maintains its compliance posture and upholds its commitment to transparent, timely project execution.',
-    initials: 'SK',
+    name: 'Investment Consultant',
+    designation: 'Head of Property Investment',
+    bio: 'Specialising in residential and commercial property investments across Bihar. Our investment team provides data-driven guidance on high-yield opportunities, rental yields, and long-term capital appreciation in Patna\'s growing market.',
+    initials: 'ME',
   },
 ]
 
@@ -96,19 +96,19 @@ const IconGlobe = () => (
 )
 
 const certifications = [
-  { name: 'Bihar RERA', subtitle: 'Registered Developer', icon: <IconShield /> },
-  { name: 'CASCON', subtitle: 'Structural Consultant', icon: <IconBeam /> },
-  { name: 'PH Engineers', subtitle: 'Public Health Engineering', icon: <IconWrench /> },
-  { name: 'ARCC', subtitle: 'Geological Consultant', icon: <IconGlobe /> },
+  { name: 'Bihar RERA', subtitle: 'Verified Listings Only', icon: <IconShield /> },
+  { name: 'Residential', subtitle: 'Sales & Rentals', icon: <IconBeam /> },
+  { name: 'Commercial', subtitle: 'Office & Retail Space', icon: <IconWrench /> },
+  { name: 'Investment', subtitle: 'Property Advisory', icon: <IconGlobe /> },
 ]
 
 export default function About() {
   return (
     <main className="pt-20">
       <SEO
-        title="About Us | Real Estate Developer in Patna Since 2004"
-        description="Tribhuvan Awas Pvt. Ltd. — 20+ years of trusted residential construction in Patna, Bihar and Ranchi, Jharkhand. RERA-registered developer, transparent dealings, on-time delivery."
-        keywords="Tribhuvan Awas about, real estate company Patna, property developer Bihar, trusted builder Patna, RERA registered developer Patna, construction company Bihar since 2004"
+        title="About Mamta Estates | Real Estate Advisory in Patna Since 2003"
+        description="Mamta Estates — 20+ years of trusted real estate advisory in Boring Road, Patna, Bihar. Expert guidance, verified listings, and transparent service for families and investors."
+        keywords="Mamta Estates about, real estate advisor Patna, property consultant Boring Road Patna, trusted real estate Patna, property advisory Bihar since 2003"
         canonical="/about"
       />
       {/* Hero */}
@@ -123,7 +123,7 @@ export default function About() {
             <span>/</span>
             <span className="text-white">About</span>
           </nav>
-          <h1 className="font-display font-bold text-4xl md:text-5xl text-white">About Tribhuvan Awas</h1>
+          <h1 className="font-display font-bold text-4xl md:text-5xl text-white">About Mamta Estates</h1>
         </div>
       </section>
 
@@ -145,7 +145,7 @@ export default function About() {
                 className="rounded-2xl w-full h-[440px] object-cover shadow-xl"
               />
               <div className="absolute -bottom-5 -right-5 bg-primary text-white rounded-xl p-4 shadow-xl hidden md:block">
-                <p className="font-display font-bold text-3xl">1987</p>
+                <p className="font-display font-bold text-3xl">2003</p>
                 <p className="text-sm text-white/80">Founded in Patna</p>
               </div>
             </motion.div>
@@ -158,20 +158,20 @@ export default function About() {
             >
               <motion.span variants={fadeUp} className="text-primary text-sm font-semibold tracking-widest uppercase">Our Story</motion.span>
               <motion.h2 variants={fadeUp} className="font-display font-bold text-4xl md:text-5xl text-secondary leading-tight">
-                20+ Years of Engineering Bihar's Future
+                20+ Years Guiding Patna's Families Home
               </motion.h2>
               <motion.p variants={fadeUp} className="text-secondary/70 leading-relaxed">
-                The Tribhuvan brand has been synonymous with quality construction in Bihar for over three and a half decades. Formally incorporated as Tribhuvan Awas Pvt. Ltd. in 2007 (CIN: U70100BR2007PTC013168), the company is registered with the Registrar of Companies, Patna, and remains in active, compliant operation.
+                Founded in 2003 on Boring Road, Patna, Mamta Estates has spent over two decades as one of Bihar's most trusted real estate advisories. We help families, professionals, and investors find the right property — with complete transparency, honest guidance, and no-pressure service.
               </motion.p>
               <motion.p variants={fadeUp} className="text-secondary/70 leading-relaxed">
-                We are managed by a highly professional consortium of dedicated engineers, architectural designers, and administrative executives. Our core philosophy is anchored in four non-negotiable principles: technical excellence, timely project delivery, clear property titles, and a genuine concern for the environment and the communities we build in.
+                Our team combines deep local knowledge of Patna's residential corridors with a genuine commitment to client welfare. We believe every family deserves a home that's right for them — and we work tirelessly to make that happen, from the first enquiry to the final handover.
               </motion.p>
               <motion.div variants={fadeUp} className="flex flex-col gap-3 mt-2">
                 {[
-                  'Earthquake-resistant RCC framed construction on every project',
-                  'Specialist consultants: CASCON (Structural), PH Engineers (Public Health), ARCC (Geological)',
-                  'Full Bihar RERA registration and compliance',
-                  'Registered address: 111, 1st Floor, Ashoka Place, Exhibition Road, Patna',
+                  'Verified, RERA-registered listings across all major Patna localities',
+                  'Expert guidance on residential sales, rentals, and investment',
+                  'Transparent pricing — complete breakdowns, no hidden charges',
+                  'Office address: Boring Road, Patna, Bihar – 800001',
                 ].map((point) => (
                   <div key={point} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
@@ -190,9 +190,9 @@ export default function About() {
       <section className="bg-surface border-y border-gray-200">
         <div className="max-w-5xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x divide-gray-200">
           <StatItem end={20} suffix="+" label="Years of Experience" />
-          <StatItem end={2} suffix="" label="RERA-Registered Projects" />
-          <StatItem end={32} suffix="+" label="Families Housed" />
-          <StatItem end={2007} suffix="" label="Year Incorporated" />
+          <StatItem end={500} suffix="+" label="Families Served" />
+          <StatItem end={50} suffix="+" label="Properties Listed" />
+          <StatItem end={2003} suffix="" label="Year Founded" />
         </div>
       </section>
 
@@ -235,7 +235,7 @@ export default function About() {
             ))}
           </motion.div>
 
-          {/* Corporate Details */}
+          {/* Company Details */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -243,15 +243,15 @@ export default function About() {
             variants={fadeUp}
             className="mt-12 bg-secondary/5 rounded-2xl border border-gray-200 p-8 max-w-3xl mx-auto"
           >
-            <h3 className="font-display font-semibold text-xl text-secondary mb-5 text-center">Corporate Information</h3>
+            <h3 className="font-display font-semibold text-xl text-secondary mb-5 text-center">Company Information</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               {[
-                { label: 'Company Name', value: 'Tribhuvan Awas Pvt. Ltd.' },
-                { label: 'CIN', value: 'U70100BR2007PTC013168', mono: true },
-                { label: 'Incorporation Date', value: 'September 7, 2007' },
+                { label: 'Company Name', value: 'Mamta Estates' },
+                { label: 'Founded', value: '2003' },
                 { label: 'Company Status', value: 'Active' },
-                { label: 'Registered With', value: 'RoC Patna, Bihar' },
-                { label: 'Registered Address', value: '111, 1st Floor, Ashoka Place, Exhibition Road, Patna – 800001' },
+                { label: 'Specialisation', value: 'Residential & Commercial Real Estate' },
+                { label: 'Area Served', value: 'Patna, Bihar' },
+                { label: 'Office Address', value: 'Boring Road, Patna, Bihar – 800001' },
               ].map((item) => (
                 <div key={item.label} className="flex flex-col gap-0.5">
                   <span className="text-muted text-xs uppercase tracking-wider">{item.label}</span>
@@ -319,10 +319,10 @@ export default function About() {
             variants={fadeUp}
             className="text-center mb-12"
           >
-            <h2 className="font-display font-bold text-3xl md:text-4xl text-secondary">Structural Philosophy & Consultants</h2>
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-secondary">Our Services at a Glance</h2>
             <div className="section-divider mt-3" />
             <p className="mt-5 text-muted max-w-2xl mx-auto text-base leading-relaxed">
-              Patna lies in a high seismic risk zone. Every Tribhuvan Awas structure is engineered with earthquake-resistant RCC framing as a non-negotiable standard — not an optional upgrade. We work with certified specialist consultants on every project.
+              From finding the perfect home to RERA compliance and investment decisions, Mamta Estates provides comprehensive, honest guidance at every stage of your property journey in Patna.
             </p>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

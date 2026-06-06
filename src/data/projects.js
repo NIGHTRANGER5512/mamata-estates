@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-//  TRIBHUVAN AWAS — Project Data
+//  MAMTA ESTATES — Project Data
 //
 //  HOW TO ADD YOUR PHOTOS & BROCHURE:
 //  1. Drop photos into:  public/projects/{id}/photos/photo1.jpg, photo2.jpg …
@@ -15,32 +15,32 @@ const PH = (seed, w = 900, h = 600) => `https://picsum.photos/seed/${seed}/${w}/
 export const projects = [
 
   /* ══════════════════════════════════════════════════════════════════
-     1. ONKARESHWAR APARTMENT — Ranchi
+     1. RESIDENTIAL PROJECT — Ranchi I
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'onkareshwar-apartment-ranchi',
-    name: 'Onkareshwar Apartment',
+    name: 'Residential Project',
     city: 'Ranchi',
     area: 'Ranchi, Jharkhand',
     type: 'Residential',
     status: 'Completed',
     bookingOpen: false,
-    description: 'A well-crafted residential development in Ranchi — built on Tribhuvan Awas\'s founding principles of structural integrity and livable design.',
-    overview: 'Onkareshwar Apartment stands as Tribhuvan Awas\'s mark on Ranchi — a thoughtfully designed residential complex delivering quality construction, practical layouts, and durable finishes. Built with earthquake-resistant RCC structure and premium material specifications, this project set the benchmark for mid-segment residential quality in the city.',
-    totalUnits: '—',           // Update when available
+    description: 'A well-crafted residential development in Ranchi — built on our founding principles of structural integrity and livable design.',
+    overview: 'A thoughtfully designed residential complex delivering quality construction, practical layouts, and durable finishes. Built with earthquake-resistant RCC structure and premium material specifications, this project set the benchmark for mid-segment residential quality in the city.',
+    totalUnits: '—',
     configuration: '2 BHK / 3 BHK',
-    totalArea: '—',            // Update when available
+    totalArea: '—',
     possessionDate: 'Delivered',
-    reraId: '—',               // Update with RERA ID
-    priceRange: '—',           // Update when available
+    reraId: '—',
+    priceRange: '—',
     floors: '—',
     parking: 'Available',
-    structuralConsultants: 'Tribhuvan Awas Engineering Team',
+    structuralConsultants: 'Mamta Estates Engineering Team',
     images: [
-      '/projects/onkareshwar-apartment-ranchi/photos/photo1.jpg',
-      '/projects/onkareshwar-apartment-ranchi/photos/photo2.jpg',
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&q=80',
     ],
-    image: '/projects/onkareshwar-apartment-ranchi/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       'Gated Community',
@@ -60,18 +60,18 @@ export const projects = [
   },
 
   /* ══════════════════════════════════════════════════════════════════
-     2. TRIVAMBAKESWAR APARTMENT — Ranchi
+     2. RESIDENTIAL PROJECT — Ranchi II
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'trivambakeswar-apartment-ranchi',
-    name: 'Trivambakeswar Apartment',
+    name: 'Premium Residency',
     city: 'Ranchi',
     area: 'Ranchi, Jharkhand',
     type: 'Residential',
     status: 'Completed',
     bookingOpen: false,
     description: 'A premium residential complex in Ranchi — designed for families seeking quality, space, and lasting structural integrity.',
-    overview: 'Trivambakeswar Apartment represents a considered approach to residential living in Ranchi. Developed with the same structural rigour and finish quality that defines every Tribhuvan Awas project, this development offers thoughtfully proportioned apartments with excellent connectivity to key city landmarks.',
+    overview: 'A considered approach to residential living in Ranchi. Developed with the same structural rigour and finish quality that defines every Mamta Estates project, this development offers thoughtfully proportioned apartments with excellent connectivity to key city landmarks.',
     totalUnits: '—',
     configuration: '2 BHK / 3 BHK',
     totalArea: '—',
@@ -80,11 +80,12 @@ export const projects = [
     priceRange: '—',
     floors: '—',
     parking: 'Available',
-    structuralConsultants: 'Tribhuvan Awas Engineering Team',
+    structuralConsultants: 'Mamta Estates Engineering Team',
     images: [
-      '/projects/trivambakeswar-apartment-ranchi/photos/photo1.jpg',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&q=80',
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80',
     ],
-    image: '/projects/trivambakeswar-apartment-ranchi/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       'Gated Community',
@@ -104,18 +105,18 @@ export const projects = [
   },
 
   /* ══════════════════════════════════════════════════════════════════
-     3. RAMESHWARAM APARTMENT — Patna, Kati Factory Road
+     3. RESIDENTIAL PROJECT — Patna, Kati Factory Road
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'rameshwaram-kati-factory-road-patna',
-    name: 'Rameshwaram Apartment',
+    name: 'Riverside Apartments',
     city: 'Patna',
     area: 'Kati Factory Road',
     type: 'Residential',
     status: 'Completed',
     bookingOpen: false,
     description: 'A landmark residential development on Kati Factory Road, Patna — delivering spacious apartments with superior construction and modern amenities.',
-    overview: 'Rameshwaram Apartment on Kati Factory Road is a flagship development by Tribhuvan Awas in Patna. Strategically located for connectivity across the city, this project features robustly constructed apartments with generous room proportions, designed for families seeking long-term quality and comfort.',
+    overview: 'Located on Kati Factory Road, this flagship development by Mamta Estates in Patna features robustly constructed apartments with generous room proportions, designed for families seeking long-term quality and comfort.',
     totalUnits: '—',
     configuration: '2 BHK / 3 BHK',
     totalArea: '—',
@@ -124,13 +125,13 @@ export const projects = [
     priceRange: '—',
     floors: '—',
     parking: 'Available',
-    structuralConsultants: 'Tribhuvan Awas Engineering Team',
+    structuralConsultants: 'Mamta Estates Engineering Team',
     images: [
-      '/projects/rameshwaram-kati-factory-road-patna/photos/photo1.jpg',
-      '/projects/rameshwaram-kati-factory-road-patna/photos/photo2.jpg',
-      '/projects/rameshwaram-kati-factory-road-patna/photos/photo3.jpg',
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=80',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
+      'https://images.unsplash.com/photo-1582407947304-fd86f28320c7?w=900&q=80',
     ],
-    image: '/projects/rameshwaram-kati-factory-road-patna/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       'Gated Community',
@@ -150,18 +151,18 @@ export const projects = [
   },
 
   /* ══════════════════════════════════════════════════════════════════
-     4. RAMESHWARAM APARTMENT — Patna, Patel Nagar
+     4. RESIDENTIAL PROJECT — Patna, Patel Nagar
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'rameshwaram-patel-nagar-patna',
-    name: 'Rameshwaram Apartment',
+    name: 'Garden View Apartments',
     city: 'Patna',
     area: 'Patel Nagar',
     type: 'Residential',
     status: 'Completed',
     bookingOpen: false,
     description: 'Nestled in the established Patel Nagar neighbourhood — a quality residential development with excellent access to Patna\'s key commercial and social infrastructure.',
-    overview: 'Rameshwaram Apartment at Patel Nagar occupies a prime residential address in one of Patna\'s most mature and well-connected neighbourhoods. Designed with the same construction standards as all Tribhuvan Awas projects, this development offers families a safe, well-finished, and connected living environment.',
+    overview: 'Located at Patel Nagar, one of Patna\'s most mature and well-connected neighbourhoods. Designed with the same construction standards as all Mamta Estates projects, this development offers families a safe, well-finished, and connected living environment.',
     totalUnits: '—',
     configuration: '2 BHK / 3 BHK',
     totalArea: '—',
@@ -170,13 +171,13 @@ export const projects = [
     priceRange: '—',
     floors: '—',
     parking: 'Available',
-    structuralConsultants: 'Tribhuvan Awas Engineering Team',
+    structuralConsultants: 'Mamta Estates Engineering Team',
     images: [
-      '/projects/rameshwaram-patel-nagar-patna/photos/photo1.jpg',
-      '/projects/rameshwaram-patel-nagar-patna/photos/photo2.jpg',
-      '/projects/rameshwaram-patel-nagar-patna/photos/photo3.jpg',
+      'https://images.unsplash.com/photo-1582407947304-fd86f28320c7?w=900&q=80',
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=80',
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80',
     ],
-    image: '/projects/rameshwaram-patel-nagar-patna/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f28320c7?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       'Gated Community',
@@ -196,18 +197,18 @@ export const projects = [
   },
 
   /* ══════════════════════════════════════════════════════════════════
-     5. SHIVAM RESIDENCY — Patna, New Mahavir Colony
+     5. GATED COMMUNITY — Patna, New Mahavir Colony
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'shivam-residency-new-mahavir-colony',
-    name: 'Shivam Residency',
+    name: 'Emerald Enclave',
     city: 'Patna',
     area: 'New Mahavir Colony',
     type: 'Residential',
     status: 'Completed',
     bookingOpen: false,
     description: 'An exclusive 16-unit gated community in New Mahavir Colony — delivered on schedule with earthquake-resistant construction and premium finishes.',
-    overview: 'Shivam Residency stands as definitive proof of Tribhuvan Awas\'s commitment to quality and timely delivery. Nestled in New Mahavir Colony, this boutique development offers 16 exclusive 3 BHK apartments across a single 4-floor structure. The low-density design ensures privacy, natural light, and a tightly knit community feel. Possession commenced in January 2021 — on schedule.',
+    overview: 'A definitive proof of our commitment to quality and timely delivery. Nestled in New Mahavir Colony, this boutique development offers 16 exclusive 3 BHK apartments across a single 4-floor structure. The low-density design ensures privacy, natural light, and a tightly knit community feel. Possession commenced in January 2021 — on schedule.',
     totalUnits: 16,
     configuration: '3 BHK',
     totalArea: '0.16 Acres (661 Sq-m)',
@@ -222,9 +223,10 @@ export const projects = [
       { label: 'Type B', carpetArea: '913 sq. ft.' },
     ],
     images: [
-      '/projects/shivam-residency-new-mahavir-colony/photos/photo1.jpg',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
     ],
-    image: '/projects/shivam-residency-new-mahavir-colony/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       'Gated Community',
@@ -244,18 +246,18 @@ export const projects = [
   },
 
   /* ══════════════════════════════════════════════════════════════════
-     6. HARI ENCLAVE — Patna, New AG Colony   ★ BOOKING OPEN ★
+     6. PREMIUM ENCLAVE — Patna, New AG Colony   ★ BOOKING OPEN ★
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'hari-enclave-new-ag-colony',
-    name: 'Hari Enclave',
+    name: 'Premium Enclave',
     city: 'Patna',
     area: 'New AG Colony',
     type: 'Residential',
     status: 'Ongoing',
     bookingOpen: true,
     description: 'A premium ultra-low-density enclave in New AG Colony — offering expansive 3 BHK apartments with modern amenities and a boutique living experience. Bookings are open now.',
-    overview: 'Hari Enclave represents Tribhuvan Awas\'s evolution into premium lifestyle curation. This exclusive development features just 4 units per floor across a single 4-storey tower — creating a deeply private, boutique living environment in the heart of New AG Colony, Patna. With super built-up areas ranging from 1,450 to 1,520 sq. ft., every apartment is engineered for maximum cross-ventilation, natural light, and generous living space.',
+    overview: 'This exclusive development features just 4 units per floor across a single 4-storey tower — creating a deeply private, boutique living environment in the heart of New AG Colony, Patna. With super built-up areas ranging from 1,450 to 1,520 sq. ft., every apartment is engineered for maximum cross-ventilation, natural light, and generous living space.',
     totalUnits: 16,
     configuration: 'Exclusively 3 BHK',
     totalArea: 'Single Tower, 4 Floors',
@@ -271,11 +273,11 @@ export const projects = [
       { label: 'Type B', superBuiltUp: '1,512 sq. ft.' },
     ],
     images: [
-      '/projects/hari-enclave-new-ag-colony/photos/photo1.jpg',
-      '/projects/hari-enclave-new-ag-colony/photos/photo2.jpg',
-      '/projects/hari-enclave-new-ag-colony/photos/photo3.jpg',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
     ],
-    image: '/projects/hari-enclave-new-ag-colony/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       'CCTV Surveillance (24/7)',
@@ -296,17 +298,12 @@ export const projects = [
       { label: 'Paras HMRI Hospital', distance: 'Nearby' },
     ],
     floorPlans: {
-      '3 BHK – 1,450 sq.ft.': PH('hari-fp1', 800, 600),
-      '3 BHK – 1,512 sq.ft.': PH('hari-fp2', 800, 600),
-      '3 BHK – 1,520 sq.ft.': PH('hari-fp3', 800, 600),
-    },
-    floorPlans: {
       'Typical Floor Plan': '/projects/hari-enclave-new-ag-colony/floorplans/Typical.png',
       'Ground Floor Plan':  '/projects/hari-enclave-new-ag-colony/floorplans/Ground.png',
     },
     brochureUrl: '/projects/hari-enclave-new-ag-colony/brochure/brochure.pdf',
     model3dUrl:  '/projects/hari-enclave-new-ag-colony/hari_enclave_ar.glb',
-    arPageUrl:   'https://nightranger5512.github.io/apartment-ar/',
+    arPageUrl:   null,
   },
 
   /* ══════════════════════════════════════════════════════════════════
@@ -314,15 +311,15 @@ export const projects = [
   ══════════════════════════════════════════════════════════════════ */
   {
     id: 'kailasam-legacy',
-    name: 'Kailasam Legacy',
+    name: 'Upcoming Signature Project',
     city: 'Patna',
     area: 'New AG Colony',
     type: 'Residential',
     status: 'Upcoming',
     bookingOpen: false,
-    description: 'Kailasam Legacy — our next landmark at New AG Colony, Patna. Coming soon.',
-    overview: 'Kailasam Legacy is Tribhuvan Awas\'s most anticipated upcoming development — a premium residential address at New AG Colony, steps from Hari Enclave. Built with the same structural quality and finish standards that define every Tribhuvan Awas project.',
-    totalUnits: '—',           // Update when available
+    description: 'Our next landmark at New AG Colony, Patna — a signature premium residence. Coming soon.',
+    overview: 'Our most anticipated upcoming development — a premium residential address at New AG Colony, steps from our current project. Built with the same structural quality and finish standards that define every Mamta Estates project.',
+    totalUnits: '—',
     configuration: '3 BHK',
     totalArea: '—',
     possessionDate: 'To Be Announced',
@@ -332,9 +329,9 @@ export const projects = [
     parking: 'Dedicated Covered Parking',
     launchDate: 'Coming Soon',
     images: [
-      '/projects/kailasam-legacy/photos/photo1.jpg',
+      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80',
     ],
-    image: '/projects/kailasam-legacy/photos/photo1.jpg',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80',
     amenities: [
       'Earthquake Resistant RCC Structure',
       '24/7 Power Backup',
@@ -347,11 +344,11 @@ export const projects = [
     ],
     nearby: [
       { label: 'New AG Colony', distance: 'On-site' },
-      { label: 'Hari Enclave (Phase I)', distance: 'Same Campus' },
+      { label: 'Premium Enclave (Phase I)', distance: 'Same Campus' },
       { label: 'Patliputra Railway Station', distance: 'Nearest' },
       { label: 'Jay Prakash Narayan Airport', distance: '6 km' },
     ],
-    brochureUrl: null,   // Brochure coming soon
+    brochureUrl: null,
   },
 ]
 
@@ -359,36 +356,36 @@ export const testimonials = [
   {
     name: 'Rajesh Kumar Sinha',
     city: 'Patna',
-    project: 'Shivam Residency',
-    quote: 'We moved into our 3 BHK at Shivam Residency and the quality has exceeded every expectation. Solid construction, premium finishes, and the team was transparent through the entire process. Possession was on time — January 2021 as promised.',
+    project: 'Emerald Enclave',
+    quote: 'We moved into our 3 BHK and the quality has exceeded every expectation. Solid construction, premium finishes, and the team was transparent through the entire process. Possession was on time — January 2021 as promised.',
     initials: 'RK',
   },
   {
     name: 'Priya Narayan',
     city: 'Patna',
-    project: 'Shivam Residency',
+    project: 'Emerald Enclave',
     quote: 'The community hall and covered parking made all the difference for us. It feels like a private colony — not a crowded apartment block. Very happy with the green surroundings too.',
     initials: 'PN',
   },
   {
     name: 'Amit Verma',
     city: 'New AG Colony, Patna',
-    project: 'Hari Enclave',
-    quote: 'We booked in Hari Enclave primarily for the location — New AG Colony is extremely well connected. The RERA compliance gave us complete legal confidence, and the construction quality is visible on every site visit.',
+    project: 'Premium Enclave',
+    quote: 'We booked primarily for the location — New AG Colony is extremely well connected. The RERA compliance gave us complete legal confidence, and the construction quality is visible on every site visit.',
     initials: 'AV',
   },
   {
     name: 'Sunita Devi',
     city: 'Patna',
-    project: 'Shivam Residency',
-    quote: 'As a family with elderly parents, the earthquake-resistant structure and lift facilities were our top priorities. Tribhuvan Awas delivered on both. The structural quality is something you can actually see and feel.',
+    project: 'Emerald Enclave',
+    quote: 'As a family with elderly parents, the earthquake-resistant structure and lift facilities were our top priorities. Mamta Estates delivered on both. The structural quality is something you can actually see and feel.',
     initials: 'SD',
   },
   {
     name: 'Manoj Kumar',
     city: 'Patna',
-    project: 'Hari Enclave',
-    quote: 'The construction quality at Hari Enclave is exceptional. Most developers in Patna cut corners, but here you can see the attention to detail on every site visit. A genuinely premium project.',
+    project: 'Premium Enclave',
+    quote: 'The construction quality is exceptional. Most developers in Patna cut corners, but here you can see the attention to detail on every site visit. A genuinely premium project.',
     initials: 'MK',
   },
 ]

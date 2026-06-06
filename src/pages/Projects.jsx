@@ -138,7 +138,7 @@ export default function Projects() {
     <main className="pt-20">
       <SEO
         title="Residential Projects in Patna & Ranchi | Apartments & Flats"
-        description="Explore all residential projects by Tribhuvan Awas — premium apartments and flats in Patna and Ranchi. Ongoing, completed, and upcoming RERA-registered housing projects in Bihar."
+        description="Explore all residential projects by Mamta Estates — premium apartments and flats in Patna and Ranchi. Ongoing, completed, and upcoming RERA-registered housing projects in Bihar."
         keywords="residential projects Patna, apartments Patna, flats Patna, 3 BHK Patna, housing projects Bihar, RERA projects Patna, new flats Patna, real estate projects Bihar, buy apartment Patna"
         canonical="/projects"
       />
@@ -241,8 +241,8 @@ export default function Projects() {
           >
             <strong className="text-secondary">Regulatory Disclosure:</strong> Both projects are duly registered
             with the Bihar Real Estate Regulatory Authority (Bihar RERA).
-            Tribhuvan Shivam Residency: <span className="font-mono-detail">BRERAP00125-1/347/R-124/2018</span>.
-            Tribhuvan Hari Enclave: <span className="font-mono-detail">BRERAP00125-2/15/R-1539/2023</span>.
+            Shivam Residency: <span className="font-mono-detail">BRERAP00125-1/347/R-124/2018</span>.
+            Hari Enclave: <span className="font-mono-detail">BRERAP00125-2/15/R-1539/2023</span>.
             All information provided is subject to terms and conditions. Prices, specifications, and availability
             are subject to change without prior notice.
           </motion.div>

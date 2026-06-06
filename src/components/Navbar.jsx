@@ -52,7 +52,7 @@ export default function Navbar() {
               ].join(', '),
             },
             scrolled: {
-              backgroundColor: 'rgba(255, 252, 248, 0.68)',
+              backgroundColor: 'rgba(247, 243, 238, 0.72)',
               boxShadow: [
                 'inset 0 1.5px 0 rgba(255,255,255,0.82)',  // top specular highlight
                 'inset 0 -1px 0 rgba(0,0,0,0.05)',          // bottom grounding edge
@@ -89,18 +89,18 @@ export default function Navbar() {
               <div className={`rounded-xl transition-all duration-300 ${isTransparent ? 'bg-white/15 backdrop-blur-sm p-1' : ''}`}>
                 <img
                   src="/logo.png"
-                  alt="Tribhuvan Awas Pvt. Ltd."
+                  alt="Mamta Estates"
                   className="h-9 w-auto object-contain"
                 />
               </div>
               <div className="leading-tight">
                 <span className={`font-display font-bold text-base block transition-colors duration-300
                   ${isTransparent ? 'text-white' : 'text-secondary'}`}>
-                  Tribhuvan Awas
+                  Mamta Estates
                 </span>
                 <span className={`text-[10px] tracking-[0.15em] uppercase block transition-colors duration-300
                   ${isTransparent ? 'text-white/60' : 'text-muted'}`}>
-                  Pvt. Ltd.
+                  Boring Road, Patna
                 </span>
               </div>
             </Link>

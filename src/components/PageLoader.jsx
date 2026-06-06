@@ -51,7 +51,7 @@ export default function PageLoader() {
             >
               <img
                 src="/logo.png"
-                alt="Tribhuvan Awas"
+                alt="Mamta Estates"
                 className="h-14 w-auto object-contain"
               />
             </motion.div>

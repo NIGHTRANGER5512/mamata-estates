@@ -15,8 +15,8 @@
 
   body {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    background-color: #FAF7F2;
-    color: #1C1C1C;
+    background-color: #F7F3EE;
+    color: #141A15;
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,14 +36,14 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'DM Serif Display', Georgia, serif;
     letter-spacing: -0.01em;
   }
 }
 
 /* ── Utility classes ─────────────────────────────────────────────── */
 @layer utilities {
-  .font-display     { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .font-display     { font-family: 'DM Serif Display', Georgia, serif; }
   .font-mono-detail { font-family: 'DM Mono', monospace; }
 
   .ease-premium     { transition-timing-function: var(--ease-out-premium); }
@@ -52,13 +52,13 @@
   /* Section dividers */
   .section-divider {
     width: 48px; height: 2px;
-    background: #C1440E;
+    background: #0D6245;
     margin: 12px auto 0;
     border-radius: 9999px;
   }
   .section-divider-left {
     width: 48px; height: 2px;
-    background: #C1440E;
+    background: #0D6245;
     margin: 12px 0 0;
     border-radius: 9999px;
   }
@@ -72,7 +72,7 @@
 
   /* Gradient text */
   .text-gradient {
-    background: linear-gradient(135deg, #C1440E 0%, #B8960C 100%);
+    background: linear-gradient(135deg, #0D6245 0%, #C09508 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -80,7 +80,7 @@
 
   /* Animated gradient text — for live accents */
   .text-gradient-animate {
-    background: linear-gradient(90deg, #C1440E, #B8960C, #C1440E);
+    background: linear-gradient(90deg, #0D6245, #C09508, #0D6245);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -130,8 +130,8 @@
 
 /* ── Scrollbar ──────────────────────────────────────────────────── */
 ::-webkit-scrollbar       { width: 4px; }
-::-webkit-scrollbar-track { background: #FAF7F2; }
-::-webkit-scrollbar-thumb { background: #C1440E; border-radius: 9999px; }
+::-webkit-scrollbar-track { background: #F7F3EE; }
+::-webkit-scrollbar-thumb { background: #0D6245; border-radius: 9999px; }
 
 /* ── Hover — real pointer devices only ──────────────────────────── */
 @media (hover: hover) and (pointer: fine) {
@@ -148,12 +148,12 @@
 /* ── Liquid Glass ────────────────────────────────────────────────── */
 /*
  * Light variant — navbar pill, floating cards, modals.
- * Pairs with the warm brand palette (#FAF7F2 body, #C1440E accent).
+ * Pairs with the warm brand palette (#F7F3EE body, #C1440E accent).
  * Usage: add class="liquid-glass rounded-{size}" to any container.
  * The gloss pseudo-element clips to border-radius automatically.
  */
 .liquid-glass {
-  background: rgba(255, 252, 248, 0.68);
+  background: rgba(247, 243, 238, 0.72);
   backdrop-filter: blur(32px) saturate(175%) brightness(1.02);
   -webkit-backdrop-filter: blur(32px) saturate(175%) brightness(1.02);
   box-shadow:

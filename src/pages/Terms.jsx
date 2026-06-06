@@ -8,7 +8,7 @@ const sections = [
     content: (
       <>
         <p>
-          By accessing, browsing, or using the website of Tribhuvan Awas Pvt. Ltd. (hereinafter referred to as "the Company", "we", "us", or "our"), you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions ("Terms"). These Terms constitute a legally binding agreement between you and Tribhuvan Awas Pvt. Ltd.
+          By accessing, browsing, or using the website of Mamta Estates (hereinafter referred to as "the Company", "we", "us", or "our"), you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions ("Terms"). These Terms constitute a legally binding agreement between you and Mamta Estates
         </p>
         <p className="mt-3">
           If you do not agree to these Terms in their entirety, you must immediately discontinue use of this website. We reserve the right to modify these Terms at any time without prior notice. Continued use of the website after any such modifications constitutes your acceptance of the revised Terms.
@@ -23,16 +23,16 @@ const sections = [
   },
   {
     id: 'about',
-    title: '2. About Tribhuvan Awas',
+    title: '2. About Mamta Estates',
     content: (
       <>
         <p>
-          Tribhuvan Awas Pvt. Ltd. is a Private Limited Company incorporated under the Companies Act, 1956, with Corporate Identification Number (CIN) <strong>U70100BR2007PTC013168</strong>, registered with the Registrar of Companies, Patna, Bihar, with its registered office at:
+          Mamta Estates is a real estate advisory firm established in 2003, with its registered office at:
         </p>
         <div className="mt-3 bg-surface rounded-xl border border-gray-200 p-4 text-sm text-secondary">
-          <p className="font-semibold">111, 1st Floor, Ashoka Place,</p>
-          <p>Exhibition Road, Patna – 800001, Bihar, India</p>
-          <p className="mt-1 text-muted">CIN: U70100BR2007PTC013168</p>
+          <p className="font-semibold">Mamta Estates</p>
+          <p>Boring Road, Patna – 800001, Bihar, India</p>
+          <p className="mt-1 text-muted">mamataestates.in</p>
         </div>
         <p className="mt-3">
           The Company is engaged in the development and sale of residential real estate in Bihar and Jharkhand and is a registered developer under the Real Estate (Regulation and Development) Act, 2016 (RERA) with the Bihar Real Estate Regulatory Authority. The Company is committed to full compliance with RERA and all applicable statutory regulations governing real estate development in India.
@@ -77,7 +77,7 @@ const sections = [
     content: (
       <>
         <p>
-          Tribhuvan Awas Pvt. Ltd. is a Bihar RERA registered developer. The following residential projects are registered under the Real Estate (Regulation and Development) Act, 2016, with the Bihar Real Estate Regulatory Authority:
+          Mamta Estates is a Bihar RERA registered developer. The following residential projects are registered under the Real Estate (Regulation and Development) Act, 2016, with the Bihar Real Estate Regulatory Authority:
         </p>
 
         {/* Highlighted RERA box */}
@@ -90,7 +90,7 @@ const sections = [
           </div>
           <div className="flex flex-col gap-4">
             <div className="bg-white rounded-lg border border-primary/20 p-4">
-              <p className="font-display font-bold text-secondary text-base">Tribhuvan Shivam Residency</p>
+              <p className="font-display font-bold text-secondary text-base">Shivam Residency</p>
               <p className="text-xs text-muted mt-0.5">Anisabad, Patna, Bihar</p>
               <div className="mt-2 flex items-center gap-2 flex-wrap">
                 <span className="text-xs font-mono-detail font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
@@ -99,7 +99,7 @@ const sections = [
               </div>
             </div>
             <div className="bg-white rounded-lg border border-primary/20 p-4">
-              <p className="font-display font-bold text-secondary text-base">Tribhuvan Hari Enclave</p>
+              <p className="font-display font-bold text-secondary text-base">Hari Enclave</p>
               <p className="text-xs text-muted mt-0.5">Ram Krishna Puram, Danapur, Patna, Bihar</p>
               <div className="mt-2 flex items-center gap-2 flex-wrap">
                 <span className="text-xs font-mono-detail font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
@@ -213,10 +213,10 @@ const sections = [
     content: (
       <>
         <p>
-          All content published on this website — including but not limited to text, written content, project descriptions, marketing copy, photographs, illustrations, 3D renders, floor plans, logos, brand names, trademarks, trade dress, icons, and the overall design and layout of the website — is the exclusive property of Tribhuvan Awas Pvt. Ltd. or is used on the website with the permission of the respective rights holders.
+          All content published on this website — including but not limited to text, written content, project descriptions, marketing copy, photographs, illustrations, 3D renders, floor plans, logos, brand names, trademarks, trade dress, icons, and the overall design and layout of the website — is the exclusive property of Mamta Estates or is used on the website with the permission of the respective rights holders.
         </p>
         <p className="mt-3">
-          All intellectual property rights are reserved. You may not, without the prior written consent of Tribhuvan Awas Pvt. Ltd.:
+          All intellectual property rights are reserved. You may not, without the prior written consent of Mamta Estates:
         </p>
         <ul className="mt-3 flex flex-col gap-2 list-none">
           {[
@@ -243,7 +243,7 @@ const sections = [
     content: (
       <>
         <p>
-          To the maximum extent permitted by applicable law, Tribhuvan Awas Pvt. Ltd., its directors, employees, agents, partners, and representatives shall not be liable for any direct, indirect, incidental, consequential, special, punitive, or exemplary damages, losses, costs, or expenses of any nature arising out of or in connection with:
+          To the maximum extent permitted by applicable law, Mamta Estates, its directors, employees, agents, partners, and representatives shall not be liable for any direct, indirect, incidental, consequential, special, punitive, or exemplary damages, losses, costs, or expenses of any nature arising out of or in connection with:
         </p>
         <ul className="mt-3 flex flex-col gap-2 list-none">
           {[
@@ -288,17 +288,17 @@ const sections = [
           For any questions, concerns, or clarifications regarding these Terms and Conditions or our RERA compliance, please contact us:
         </p>
         <div className="mt-4 bg-surface rounded-xl border border-gray-200 p-5 flex flex-col gap-2 text-sm">
-          <p className="font-semibold text-secondary font-display text-base">Tribhuvan Awas Pvt. Ltd.</p>
-          <p className="text-muted">111, 1st Floor, Ashoka Place, Exhibition Road, Patna – 800001, Bihar, India</p>
+          <p className="font-semibold text-secondary font-display text-base">Mamta Estates</p>
+          <p className="text-muted">Boring Road, Patna, Bihar – 800001, Bihar, India</p>
           <p className="text-muted">
             Phone:{' '}
-            <a href="tel:+919801056929" className="text-primary hover:underline">+91-9801056929</a>
+            <a href="mailto:info@mamataestates.in" className="text-primary hover:underline">info@mamataestates.in</a>
           </p>
           <p className="text-muted">
             Email:{' '}
-            <a href="mailto:anilranjan5512@gmail.com" className="text-primary hover:underline">anilranjan5512@gmail.com</a>
+            <a href="mailto:info@mamataestates.in" className="text-primary hover:underline">info@mamataestates.in</a>
           </p>
-          <p className="text-muted">CIN: U70100BR2007PTC013168</p>
+          <p className="text-muted">mamataestates.in</p>
           <p className="text-muted">
             Bihar RERA Portal:{' '}
             <a
@@ -319,7 +319,7 @@ const sections = [
 export default function Terms() {
   return (
     <main className="pt-20">
-      <SEO title="Terms & Conditions" description="Terms and Conditions for using the Tribhuvan Awas website, including RERA disclaimer and liability limitations." noIndex />
+      <SEO title="Terms & Conditions" description="Terms and Conditions for using the Mamta Estates website, including RERA disclaimer and liability limitations." noIndex />
       {/* Hero */}
       <section
         className="relative h-56 md:h-72 flex items-end bg-cover bg-center"
@@ -340,7 +340,7 @@ export default function Terms() {
       <div className="bg-surface border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-6 py-5">
           <p className="text-muted text-sm leading-relaxed">
-            Please read these Terms and Conditions carefully before using the Tribhuvan Awas Pvt. Ltd. website. By accessing or using our website, you agree to be bound by these Terms. <span className="text-primary font-medium">Last Updated: May 2026.</span>
+            Please read these Terms and Conditions carefully before using the Mamta Estates website. By accessing or using our website, you agree to be bound by these Terms. <span className="text-primary font-medium">Last Updated: May 2026.</span>
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ const quickLinks = [
 const socials = [
   {
     label: 'WhatsApp',
-    href: 'https://wa.me/919234682722',
+    href: 'https://wa.me/91XXXXXXXXXX',
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M16.003 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.353.638 4.56 1.751 6.464L2.667 29.333l7.077-1.73A13.27 13.27 0 0 0 16.003 29.333c7.364 0 13.33-5.969 13.33-13.333 0-7.364-5.966-13.333-13.33-13.333Zm0 24.267a11.01 11.01 0 0 1-5.594-1.528l-.4-.238-4.198 1.027 1.055-4.092-.262-.42A10.957 10.957 0 0 1 5.003 16c0-6.074 4.926-11 11-11s11 4.926 11 11-4.926 11-11 11Zm6.04-8.213c-.33-.165-1.955-.962-2.258-1.073-.304-.11-.524-.165-.745.165-.22.33-.855 1.073-1.048 1.293-.193.22-.386.248-.716.083-.33-.165-1.393-.513-2.652-1.636-.98-.874-1.641-1.953-1.834-2.283-.193-.33-.021-.508.145-.673.15-.148.33-.386.496-.58.165-.193.22-.33.33-.55.11-.22.055-.413-.028-.58-.083-.165-.745-1.793-1.02-2.455-.269-.645-.542-.557-.745-.568l-.635-.01c-.22 0-.578.083-.88.413-.303.33-1.155 1.128-1.155 2.752s1.183 3.192 1.348 3.412c.165.22 2.329 3.558 5.643 4.99.789.34 1.404.543 1.883.695.79.25 1.51.215 2.079.13.635-.094 1.955-.8 2.232-1.572.276-.772.276-1.434.193-1.572-.083-.138-.303-.22-.634-.386Z"/>
@@ -68,28 +68,28 @@ export default function Footer() {
               <div className="bg-white rounded-xl px-2 py-1.5 flex-shrink-0">
                 <img
                   src="/logo.png"
-                  alt="Tribhuvan Awas Pvt. Ltd."
+                  alt="Mamta Estates"
                   className="h-9 w-auto object-contain"
                 />
               </div>
               <div>
-                <span className="font-display font-bold text-base block">Tribhuvan Awas</span>
-                <span className="text-xs text-white/50 tracking-widest">PVT. LTD.</span>
+                <span className="font-display font-bold text-base block">Mamta Estates</span>
+                <span className="text-xs text-white/50 tracking-widest">BORING ROAD, PATNA</span>
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
-              Building Homes. Delivering Trust.<br />
-              Sapna ho Sakaar Aapka, Ek Ghar ho Apna Aapka.<br />
-              Engineering excellence in Bihar &amp; Jharkhand since 2004.
+              Your Home, Our Promise.<br />
+              Trusted real estate advisory in Patna —<br />
+              helping families find their perfect home since 2003.
             </p>
             <div className="flex flex-col gap-1.5">
               <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/40 text-accent text-xs font-semibold px-3 py-1.5 rounded-full w-fit">
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
                 </svg>
-                RERA Registered
+                Verified Listings
               </div>
-              <p className="text-white/35 text-xs font-mono-detail">CIN: U70100BR2007PTC013168</p>
+              <p className="text-white/35 text-xs font-mono-detail">mamataestates.in</p>
             </div>
           </div>
 
@@ -132,30 +132,20 @@ export default function Footer() {
                 <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
-                <span>111, 1st Floor, Ashoka Place,<br />Exhibition Road, Patna – 800001</span>
+                <span>Boring Road,<br />Patna, Bihar – 800001</span>
               </li>
               <li className="flex gap-2.5">
                 <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                 </svg>
-                <a href="tel:+919801056929" className="hover:text-white transition-colors">+91-9801056929</a>
-              </li>
-              <li className="flex gap-2.5">
-                {/* WhatsApp */}
-                <svg className="w-4 h-4 mt-0.5 flex-shrink-0 flex-shrink-0" viewBox="0 0 32 32" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.003 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.353.638 4.56 1.751 6.464L2.667 29.333l7.077-1.73A13.27 13.27 0 0 0 16.003 29.333c7.364 0 13.33-5.969 13.33-13.333 0-7.364-5.966-13.333-13.33-13.333Zm0 24.267a11.01 11.01 0 0 1-5.594-1.528l-.4-.238-4.198 1.027 1.055-4.092-.262-.42A10.957 10.957 0 0 1 5.003 16c0-6.074 4.926-11 11-11s11 4.926 11 11-4.926 11-11 11Zm6.04-8.213c-.33-.165-1.955-.962-2.258-1.073-.304-.11-.524-.165-.745.165-.22.33-.855 1.073-1.048 1.293-.193.22-.386.248-.716.083-.33-.165-1.393-.513-2.652-1.636-.98-.874-1.641-1.953-1.834-2.283-.193-.33-.021-.508.145-.673.15-.148.33-.386.496-.58.165-.193.22-.33.33-.55.11-.22.055-.413-.028-.58-.083-.165-.745-1.793-1.02-2.455-.269-.645-.542-.557-.745-.568l-.635-.01c-.22 0-.578.083-.88.413-.303.33-1.155 1.128-1.155 2.752s1.183 3.192 1.348 3.412c.165.22 2.329 3.558 5.643 4.99.789.34 1.404.543 1.883.695.79.25 1.51.215 2.079.13.635-.094 1.955-.8 2.232-1.572.276-.772.276-1.434.193-1.572-.083-.138-.303-.22-.634-.386Z"/>
-                </svg>
-                <a href="https://wa.me/919234682722" target="_blank" rel="noopener noreferrer"
-                  className="hover:text-white transition-colors">
-                  WhatsApp: +91-9234682722
-                </a>
+                <a href="tel:+919876543210" className="hover:text-white transition-colors">+91 [Contact Number]</a>
               </li>
               <li className="flex gap-2.5">
                 <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
-                <a href="mailto:anilranjan5512@gmail.com" className="hover:text-white transition-colors break-all">
-                  anilranjan5512@gmail.com
+                <a href="mailto:info@mamataestates.in" className="hover:text-white transition-colors break-all">
+                  info@mamataestates.in
                 </a>
               </li>
               <li className="flex gap-2.5">
@@ -176,7 +166,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-2 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            © 2026 Tribhuvan Awas Pvt. Ltd. All rights reserved. | CIN: U70100BR2007PTC013168
+            © 2026 Mamta Estates. All rights reserved. | Boring Road, Patna, Bihar
           </p>
           <div className="flex items-center gap-6">
             <Link to="/privacy-policy" className="text-white/40 hover:text-white/70 text-xs transition-colors">Privacy Policy</Link>

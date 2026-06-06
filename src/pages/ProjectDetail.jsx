@@ -81,7 +81,7 @@ export default function ProjectDetail() {
       <SEO
         title={`${project.name} — ${project.configuration || ''} Apartments in ${project.area}, ${project.city}`}
         description={project.overview?.substring(0, 155) || project.description}
-        keywords={`${project.name}, ${project.configuration || 'apartments'} in ${project.city}, ${project.area} ${project.city}, real estate ${project.city}, RERA registered flats ${project.city}, buy flat ${project.area} ${project.city}, Tribhuvan Awas ${project.city}`}
+        keywords={`${project.name}, ${project.configuration || 'apartments'} in ${project.city}, ${project.area} ${project.city}, real estate ${project.city}, RERA registered flats ${project.city}, buy flat ${project.area} ${project.city}, Mamta Estates ${project.city}`}
         canonical={`/projects/${project.id}`}
         image={project.images?.[0]}
       />
@@ -230,7 +230,7 @@ export default function ProjectDetail() {
                       Fill Enquiry Form
                     </a>
                     <a
-                      href={`https://wa.me/919234682722?text=${encodeURIComponent(`Hi! I'm interested in ${project.name} at ${project.area}, ${project.city}. Please share the pricing details.`)}`}
+                      href={`https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(`Hi! I'm interested in ${project.name} at ${project.area}, ${project.city}. Please share the pricing details.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold text-sm px-5 py-3 rounded-full hover:bg-[#22c55e] transition-colors"
@@ -486,8 +486,8 @@ export default function ProjectDetail() {
 
                   <div className="mt-5 pt-4 border-t border-gray-100 text-center">
                     <p className="text-muted text-xs mb-2">Or call / WhatsApp us directly</p>
-                    <a href="tel:+919801056929" className="text-primary font-semibold text-sm hover:underline">
-                      +91-9801056929
+                    <a href="mailto:info@mamataestates.in" className="text-primary font-semibold text-sm hover:underline">
+                      info@mamataestates.in
                     </a>
                     <div className="mt-3">
                       <Link

@@ -55,9 +55,9 @@ export default function Contact() {
         </svg>
       ),
       title: 'Call Us',
-      detail: '+91-9801056929',
+      detail: '+91 [Contact Number]',
       sub: 'Mon–Sat · 9:00 AM – 6:00 PM',
-      href: 'tel:+919801056929',
+      href: 'tel:+91XXXXXXXXXX',
     },
     {
       icon: (
@@ -66,9 +66,9 @@ export default function Contact() {
         </svg>
       ),
       title: 'WhatsApp',
-      detail: '+91-9234682722',
+      detail: '+91 [WhatsApp Number]',
       sub: 'Chat with us instantly',
-      href: 'https://wa.me/919234682722?text=' + encodeURIComponent('Hello! I am interested in your projects at Tribhuvan Awas.'),
+      href: 'https://wa.me/91XXXXXXXXXX?text=' + encodeURIComponent('Hello! I am interested in properties listed by Mamta Estates. Could you please help me?'),
       external: true,
       whatsapp: true,
     },
@@ -79,9 +79,9 @@ export default function Contact() {
         </svg>
       ),
       title: 'Email Us',
-      detail: 'anilranjan5512@gmail.com',
+      detail: 'info@mamataestates.in',
       sub: 'We reply within 24 hours',
-      href: 'mailto:anilranjan5512@gmail.com',
+      href: 'mailto:info@mamataestates.in',
     },
     {
       icon: (
@@ -90,18 +90,18 @@ export default function Contact() {
         </svg>
       ),
       title: 'Visit Us',
-      detail: 'Exhibition Road, Patna',
-      sub: '111, 1st Floor, Ashoka Place – 800001',
-      href: 'https://maps.google.com/?q=Exhibition+Road+Ashoka+Place+Patna+Bihar',
+      detail: 'Boring Road, Patna',
+      sub: 'Boring Road, Patna, Bihar – 800001',
+      href: 'https://maps.google.com/?q=Boring+Road+Patna+Bihar',
     },
   ]
 
   return (
     <main className="pt-20">
       <SEO
-        title="Contact Us | Real Estate Enquiry in Patna, Bihar"
-        description="Contact Tribhuvan Awas for project enquiries, site visit bookings, or pricing information. Call or WhatsApp our team in Patna, Bihar."
-        keywords="contact real estate developer Patna, property enquiry Patna, book site visit Patna, real estate office Patna Bihar, Tribhuvan Awas contact"
+        title="Contact Mamta Estates | Property Enquiry in Patna, Bihar"
+        description="Contact Mamta Estates for property enquiries, site visit bookings, or pricing information. Email or visit our team on Boring Road, Patna, Bihar."
+        keywords="contact real estate Patna, property enquiry Patna, book site visit Patna, real estate office Boring Road Patna, Mamta Estates contact"
         canonical="/contact"
       />
       {/* Hero */}
@@ -221,9 +221,9 @@ export default function Contact() {
                       className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm text-secondary focus:outline-none focus:border-primary transition-colors"
                     >
                       <option value="">Select subject...</option>
-                      <option value="hari">Tribhuvan Hari Enclave</option>
-                      <option value="shivam">Tribhuvan Shivam Residency</option>
-                      <option value="kailasam">Kailasam Legacy</option>
+                      <option value="hari">Hari Enclave – New AG Colony</option>
+                      <option value="shivam">Shivam Residency – New Mahavir Colony</option>
+                      <option value="kailasam">Kailasam Legacy – Upcoming</option>
                       <option value="general">General Inquiry</option>
                       <option value="other">Other / Business</option>
                     </select>
@@ -274,9 +274,9 @@ export default function Contact() {
                 <h3 className="font-display font-semibold text-xl text-secondary mb-4">Registered Office</h3>
                 <div className="flex flex-col gap-4 text-sm">
                   {[
-                    { icon: 'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z', text: '111, 1st Floor, Ashoka Place, Exhibition Road, Patna, Bihar – 800001', href: null },
-                    { icon: 'M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z', text: '+91-9801056929', href: 'tel:+919801056929' },
-                    { icon: 'M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z', text: 'anilranjan5512@gmail.com', href: 'mailto:anilranjan5512@gmail.com' },
+                    { icon: 'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z', text: 'Boring Road, Patna, Bihar – 800001', href: null },
+                    { icon: 'M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z', text: '+91 [Contact Number]', href: 'tel:+91XXXXXXXXXX' },
+                    { icon: 'M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z', text: 'info@mamataestates.in', href: 'mailto:info@mamataestates.in' },
                     { icon: 'M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z', text: 'Mon–Sat: 9:00 AM – 6:00 PM', href: null },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3">
@@ -302,8 +302,8 @@ export default function Contact() {
                 className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm"
               >
                 <iframe
-                  title="Tribhuvan Awas Office Location"
-                  src="https://maps.google.com/maps?q=Ashoka+Place,+Exhibition+Road,+Patna,+Bihar+800001&output=embed&z=17"
+                  title="Mamta Estates Office Location"
+                  src="https://maps.google.com/maps?q=Boring+Road,+Patna,+Bihar+800001&output=embed&z=15"
                   width="100%"
                   height="200"
                   style={{ border: 0, display: 'block' }}
@@ -312,7 +312,7 @@ export default function Contact() {
                   referrerPolicy="strict-origin"
                 />
                 <a
-                  href="https://maps.google.com/?q=Ashoka+Place+Exhibition+Road+Patna+Bihar+800001"
+                  href="https://maps.google.com/?q=Boring+Road+Patna+Bihar+800001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-1.5 py-2.5 bg-white hover:bg-gray-50
@@ -333,10 +333,10 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: 0.25 }}
                 className="bg-secondary/5 rounded-2xl p-5 border border-gray-200"
               >
-                <p className="text-xs text-muted uppercase tracking-widest mb-2">Corporate Identity</p>
-                <p className="font-mono-detail text-secondary text-xs">CIN: U70100BR2007PTC013168</p>
-                <p className="font-mono-detail text-secondary text-xs mt-1">RERA (Shivam): BRERAP00125-1/347/R-124/2018</p>
-                <p className="font-mono-detail text-secondary text-xs mt-1">RERA (Hari): BRERAP00125-2/15/R-1539/2023</p>
+                <p className="text-xs text-muted uppercase tracking-widest mb-2">Company Identity</p>
+                <p className="font-mono-detail text-secondary text-xs">Mamta Estates</p>
+                <p className="font-mono-detail text-secondary text-xs mt-1">Boring Road, Patna, Bihar – 800001</p>
+                <p className="font-mono-detail text-secondary text-xs mt-1">info@mamataestates.in</p>
               </motion.div>
             </div>
           </div>

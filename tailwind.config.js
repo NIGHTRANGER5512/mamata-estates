@@ -4,21 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary:       '#C1440E',
-        'primary-light':'#D4622A',
-        'primary-dark': '#A03509',
-        secondary:     '#1C1C1C',
-        surface:       '#FAF7F2',
-        muted:         '#8A8680',
-        accent:        '#B8960C',
-        'accent-light':'#D4AE16',
+        primary:       '#0D6245',
+        'primary-light':'#128A5E',
+        'primary-dark': '#094D36',
+        secondary:     '#141A15',
+        surface:       '#F7F3EE',
+        muted:         '#7C8A7E',
+        accent:        '#C09508',
+        'accent-light':'#D9B020',
       },
       fontFamily: {
-        // Cormorant Garamond — high-contrast editorial serif (headings)
-        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        // DM Serif Display — clean premium serif (headings)
+        display: ['"DM Serif Display"', 'Georgia', 'serif'],
         // Plus Jakarta Sans — modern humanist sans-serif (body)
         body:    ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        // DM Mono — tabular data, RERA IDs, stats
+        // DM Mono — tabular data, stats, codes
         'mono-detail': ['"DM Mono"', 'monospace'],
       },
       animation: {

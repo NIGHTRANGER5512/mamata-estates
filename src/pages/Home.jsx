@@ -10,36 +10,36 @@ const EASE2 = [0.32, 0.72, 0, 1]
 /* ── FAQ data — each Q&A is indexed by AI engines ──────────────── */
 const FAQS = [
   {
-    q: 'Is Tribhuvan Awas a RERA-registered developer in Patna?',
-    a: 'Yes. Tribhuvan Awas Pvt. Ltd. is fully registered with Bihar RERA. Shivam Residency carries RERA ID BRERAP00125-1/347/R-124/2018 and Hari Enclave carries RERA ID BRERAP00125-2/15/R-1539/2023. All projects are legally compliant and buyer investments are protected under the Real Estate (Regulation and Development) Act.',
+    q: 'What services does Mamta Estates offer in Patna?',
+    a: 'Mamta Estates provides end-to-end real estate advisory services in Patna — including residential property sales, rental assistance, investment guidance, and RERA-verified project listings. Our team on Boring Road offers personalised support for buyers, sellers, and investors across all prime Patna localities.',
   },
   {
-    q: 'What is the price of a 3 BHK flat in Patna by Tribhuvan Awas?',
-    a: 'Pricing for Hari Enclave in New AG Colony, Patna is available on request. Apartment sizes range from 1,450 to 1,512 sq. ft. super built-up area (3 BHK). Contact us via the enquiry form at tribhuvanawas.com or WhatsApp +91-9234682722 for a complete cost breakdown. At the completed Shivam Residency, 3 BHK units ranged from ₹65.9 Lakh to ₹90 Lakh.',
+    q: 'What is the price of a 3 BHK flat in Patna?',
+    a: 'Pricing for 3 BHK flats in Patna varies by location. Premium addresses like New AG Colony, Boring Road, and Patliputra Colony typically range from ₹65 Lakh to ₹1.5 Crore depending on size, floor, and amenities. Contact Mamta Estates via the enquiry form or email info@mamataestates.in for a property-specific cost breakdown.',
   },
   {
     q: 'Which is the best area to buy a flat in Patna?',
-    a: 'New AG Colony is one of the most sought-after residential addresses in Patna — well connected to Patliputra Railway Station, just 6 km from Jay Prakash Narayan International Airport, and close to G.D. Goenka School and Paras HMRI Hospital. Tribhuvan Awas has two projects here: Hari Enclave (ongoing) and Kailasam Legacy (upcoming).',
+    a: 'Boring Road, New AG Colony, Patliputra Colony, and Rajendra Nagar are among the most sought-after residential addresses in Patna — well connected to Patliputra Railway Station, Jay Prakash Narayan Airport, and major schools and hospitals. Mamta Estates has verified listings across all these prime corridors.',
   },
   {
-    q: 'What amenities does Hari Enclave in Patna offer?',
-    a: 'Hari Enclave offers: 24/7 power backup, 24/7 water supply, CCTV surveillance, fire fighting system, high-speed elevator, dedicated covered car parking, intercom facility, on-site security personnel, and an earthquake-resistant RCC structure.',
+    q: 'What amenities should I look for in a Patna apartment?',
+    a: 'For quality residential living in Patna, look for 24/7 power backup, dedicated covered parking, CCTV surveillance, fire safety systems, a high-speed elevator, and an earthquake-resistant RCC structure. Mamta Estates verifies amenity details for every listing to ensure buyers have complete, accurate information.',
   },
   {
-    q: 'When is the possession date for Hari Enclave Patna?',
-    a: 'Hari Enclave in New AG Colony, Patna is an ongoing project. Possession is scheduled between December 2025 and February 2027. The project was launched in February 2023 and is registered with Bihar RERA (ID: BRERAP00125-2/15/R-1539/2023).',
+    q: 'How do I schedule a property site visit through Mamta Estates?',
+    a: 'Simply submit an enquiry through our website, email us at info@mamataestates.in, or visit our office on Boring Road, Patna (Mon–Sat, 9 AM–6 PM). Our team will arrange a convenient site visit and walk you through pricing, documentation, and legal compliance — with no obligation.',
   },
   {
-    q: 'How experienced is Tribhuvan Awas as a real estate developer?',
-    a: 'Tribhuvan Awas Pvt. Ltd. was founded in 2004 and has over 20 years of residential construction experience in Bihar and Jharkhand. The company has delivered projects in Patna and Ranchi including Shivam Residency, Rameshwaram Apartments, Onkareshwar Apartment, and Trivambakeswar Apartment — all on schedule.',
+    q: 'How experienced is Mamta Estates as a real estate advisor in Patna?',
+    a: 'Mamta Estates has been guiding families and investors in Patna since 2003 — over two decades of trusted service in the Bihar real estate market. Our team brings deep local knowledge of Patna\'s residential corridors, pricing trends, and project quality standards.',
   },
   {
-    q: 'Are Tribhuvan Awas apartments earthquake resistant?',
-    a: 'Yes. All Tribhuvan Awas projects are built on RCC (Reinforced Cement Concrete) framed structures engineered to seismic zone compliance. Structural design is handled by CASCON, with additional consultation from PH Engineers (public health) and ARCC (geological) on premium projects.',
+    q: 'Does Mamta Estates list RERA-registered properties?',
+    a: 'Yes. Mamta Estates prioritises RERA-registered project listings to protect buyer interests. We strongly encourage clients to verify all project details on the Bihar RERA official portal at rera.bihar.gov.in before making any purchase decision.',
   },
   {
-    q: 'How do I book a flat or schedule a site visit at Hari Enclave Patna?',
-    a: 'You can enquire directly through our website at tribhuvanawas.com/contact, call us at +91-9801056929, or WhatsApp +91-9234682722. Our team will arrange a site visit and provide a complete pricing breakdown with no hidden charges.',
+    q: 'Are the properties listed by Mamta Estates earthquake resistant?',
+    a: 'Patna lies in a high seismic risk zone, and Mamta Estates specifically recommends and lists properties built with earthquake-resistant RCC framed structures. We advise buyers to review structural certification and consultant credentials for every project before booking.',
   },
 ]
 
@@ -152,9 +152,9 @@ function MottoLine({ text, delay, color, italic = true }) {
 
 /* ── Infinite marquee ───────────────────────────────────────────── */
 const TICKER = [
-  'Est. 2004', 'Bihar RERA Registered', '20+ Years', 'Premium 3 BHK',
-  'Patna, Bihar', 'On-Time Delivery', 'Earthquake Resistant', 'Vastu Compliant',
-  'CASCON Certified', 'Transparent Pricing',
+  'Est. 2003', 'Boring Road, Patna', '20+ Years', 'Premium Properties',
+  'Patna, Bihar', 'Verified Listings', 'RERA Compliant', 'Vastu Compliant',
+  'Expert Guidance', 'Transparent Pricing',
 ]
 function Marquee({ dark = false }) {
   const items = [...TICKER, ...TICKER]
@@ -386,27 +386,27 @@ export default function Home() {
   const [r16, count16] = useCounter(16)
 
   const services = [
-    { icon: <IconHouse />,     title: 'Residential Construction', desc: 'Boutique, low-density apartment communities — vastu-compliant and earthquake-resistant.' },
-    { icon: <IconColumns />,   title: 'Structural Engineering',   desc: 'CASCON, PH Engineers and ARCC as specialist consultants on every project.' },
-    { icon: <IconFileCheck />, title: 'RERA Compliant Delivery',  desc: 'All projects registered with Bihar RERA — full transparency, zero hidden risks.' },
-    { icon: <IconKey />,       title: 'Post-Possession Support',  desc: 'Clear titles, complete documentation, and ongoing society management.' },
+    { icon: <IconHouse />,     title: 'Residential Sales',        desc: 'Verified listings across Patna\'s prime localities — flats, plots, and independent houses.' },
+    { icon: <IconColumns />,   title: 'Property Investment',      desc: 'Expert guidance on high-yield residential and commercial investment opportunities in Bihar.' },
+    { icon: <IconFileCheck />, title: 'RERA-Verified Listings',   desc: 'Every project we recommend is RERA-registered — full transparency, zero hidden risks.' },
+    { icon: <IconKey />,       title: 'End-to-End Assistance',    desc: 'From shortlisting to documentation and registration — we guide you at every step.' },
   ]
 
   const benefits = [
-    { icon: <IconClock />,   title: 'On-Time Delivery',       desc: 'Shivam Residency possession commenced January 2021 — exactly as committed.' },
-    { icon: <IconShield />,  title: 'RERA Registered',        desc: 'Both projects hold valid Bihar RERA numbers. Your investment is legally secure.' },
-    { icon: <IconBuild />,   title: 'Earthquake Resistant',   desc: 'All structures built on RCC framed, seismic-zone-compliant foundations.' },
-    { icon: <IconTag />,     title: 'Transparent Pricing',    desc: 'No hidden charges. Complete cost breakdowns and payment plans upfront.' },
-    { icon: <IconCompass />, title: 'Vastu-Compliant Design', desc: 'Floor plans reviewed for vastu compliance by dedicated consultants.' },
-    { icon: <IconUsers />,   title: 'Experienced Leadership', desc: '20+ years of regional construction expertise under the Tribhuvan brand.' },
+    { icon: <IconClock />,   title: 'Prompt Response',         desc: 'Our team responds to every enquiry within hours — because your time matters.' },
+    { icon: <IconShield />,  title: 'RERA-Verified Only',      desc: 'We list only legally compliant, RERA-registered projects to protect buyer interests.' },
+    { icon: <IconBuild />,   title: 'Structural Guidance',     desc: 'We advise on earthquake-resistant, RCC-framed construction standards for Patna.' },
+    { icon: <IconTag />,     title: 'Transparent Pricing',     desc: 'No hidden charges. Complete cost breakdowns and payment plans shared upfront.' },
+    { icon: <IconCompass />, title: 'Local Expertise',         desc: 'Two decades on Boring Road means unmatched knowledge of Patna\'s property market.' },
+    { icon: <IconUsers />,   title: 'Family-First Approach',   desc: 'We treat every client like family — honest advice, no pressure, lasting relationships.' },
   ]
 
   return (
     <main>
       <SEO
-        title="Real Estate Developer in Patna Bihar | Premium Apartments"
-        description="Tribhuvan Awas — RERA-registered real estate developer in Patna, Bihar since 2004. Premium 2 BHK & 3 BHK apartments in Patna. Trusted builder with on-time delivery, transparent pricing and earthquake-resistant construction."
-        keywords="real estate developer Patna, real estate agent Patna, property developer Patna Bihar, builder in Patna, apartments in Patna, 3 BHK flats Patna, 2 BHK flats Patna, new residential projects Patna, RERA registered builder Patna Bihar, construction company Patna, buy flat Patna, Tribhuvan Awas"
+        title="Mamta Estates | Real Estate Advisory in Patna, Bihar"
+        description="Mamta Estates — trusted real estate advisory in Boring Road, Patna, Bihar since 2003. Premium residential properties in Patna. Expert guidance, verified listings, transparent pricing."
+        keywords="real estate Patna, property consultant Patna, buy flat Patna, apartments in Patna, 3 BHK flats Patna, 2 BHK flats Patna, residential projects Patna, property in Boring Road Patna, Mamta Estates, real estate agent Patna Bihar"
         canonical="/"
         image="/logo.png"
       />
@@ -415,130 +415,225 @@ export default function Home() {
           ║  HERO                                                    ║
           ╚══════════════════════════════════════════════════════════╝ */}
       <section className="relative min-h-[100dvh] overflow-hidden flex items-center">
-        {/* Parallax background */}
-        <motion.div style={{ y: heroImgY }} className="absolute inset-0 scale-[1.28] origin-center">
+
+        {/* ── Parallax background ── */}
+        <motion.div style={{ y: heroImgY }} className="absolute inset-0 scale-[1.22] origin-center">
           <img
-            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80"
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=85"
             alt="" className="w-full h-full object-cover"
           />
         </motion.div>
-        {/* Multi-layer overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/75 via-secondary/55 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-transparent" />
 
-        {/* Content */}
+        {/* ── Gradient overlays ── */}
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/92 via-secondary/72 to-secondary/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-secondary/35" />
+
+        {/* ── Dot grid ── */}
+        <div className="absolute inset-0 pointer-events-none opacity-[0.045]"
+          style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.9) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
+
+        {/* ── Ambient glow blobs ── */}
+        <motion.div
+          animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
+          transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+          className="absolute top-1/4 right-1/4 w-[600px] h-[600px] rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(13,98,69,0.22) 0%, transparent 68%)' }}
+        />
+        <motion.div
+          animate={{ x: [0, -25, 0], y: [0, 35, 0] }}
+          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut', delay: 4 }}
+          className="absolute bottom-1/3 right-1/3 w-[380px] h-[380px] rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(192,149,8,0.14) 0%, transparent 68%)' }}
+        />
+
+        {/* ── Main content ── */}
         <motion.div
           style={{ y: heroContentY, opacity: heroOpacity }}
-          className="relative z-10 max-w-7xl mx-auto px-5 lg:px-16 w-full pt-28 pb-16 md:pt-36 md:pb-24"
+          className="relative z-10 max-w-7xl mx-auto px-5 lg:px-16 w-full pt-28 pb-20 md:pt-36 md:pb-28"
         >
-          <div className="flex flex-col items-start gap-4 md:gap-5 max-w-[680px] w-full">
-            {/* Eyebrow pill */}
-            <motion.span
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: L + 0.05, duration: 0.6, ease: EASE }}
-              className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/70
-                         border border-white/20 px-4 py-1.5 rounded-full backdrop-blur-sm"
-            >
-              Est. 2004 · Bihar's Trusted Builder · 20+ Years
-            </motion.span>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
 
-            {/* Word-mask heading */}
-            <MaskReveal
-              text="Building Homes. Delivering Trust."
-              baseDelay={L + 0.15}
-              className="font-display font-bold text-[clamp(2.2rem,7vw,5.5rem)] text-white leading-[1.04] tracking-tight"
-            />
+            {/* LEFT: text */}
+            <div className="flex flex-col items-start gap-5 max-w-[660px]">
 
-            {/* Motto — animated */}
-            <div className="flex items-stretch gap-4">
-              {/* Left bar draws downward */}
-              <motion.span
-                initial={{ scaleY: 0, opacity: 0 }}
-                animate={{ scaleY: 1, opacity: 1 }}
-                transition={{ delay: L + 0.55, duration: 0.55, ease: EASE }}
-                className="w-[3px] rounded-full bg-primary flex-shrink-0 self-stretch origin-top"
+              {/* Live eyebrow badge */}
+              <motion.div
+                initial={{ opacity: 0, x: -24 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: L + 0.05, duration: 0.6, ease: EASE }}
+                className="flex items-center gap-2.5 border border-white/20 px-4 py-1.5 rounded-full backdrop-blur-sm"
+              >
+                <span className="relative flex h-2 w-2 flex-shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-70" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
+                </span>
+                <span className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/70">
+                  Est. 2003 · Boring Road, Patna · 20+ Years
+                </span>
+              </motion.div>
+
+              {/* Heading */}
+              <MaskReveal
+                text="Building Homes. Delivering Trust."
+                baseDelay={L + 0.15}
+                className="font-display font-bold text-[clamp(2.4rem,7vw,5.5rem)] text-white leading-[1.03] tracking-tight"
               />
-              <div className="flex flex-col gap-0.5">
-                <MottoLine
-                  text="Sapna ho Sakaar Aapka,"
-                  delay={L + 0.65}
-                  color="rgba(255,255,255,0.92)"
+
+              {/* Animated rule */}
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ delay: L + 0.52, duration: 0.75, ease: EASE }}
+                className="h-[2px] w-24 rounded-full origin-left"
+                style={{ background: 'linear-gradient(90deg, #0D6245 0%, #C09508 100%)' }}
+              />
+
+              {/* Motto */}
+              <div className="flex items-stretch gap-4">
+                <motion.span
+                  initial={{ scaleY: 0 }}
+                  animate={{ scaleY: 1 }}
+                  transition={{ delay: L + 0.58, duration: 0.5, ease: EASE }}
+                  className="w-[3px] rounded-full bg-primary flex-shrink-0 self-stretch origin-top"
                 />
-                <MottoLine
-                  text="Ek Ghar ho Apna Aapka"
-                  delay={L + 0.82}
-                  color="#E8845A"
-                />
+                <div className="flex flex-col gap-0.5">
+                  <MottoLine text="Your Home, Our Promise." delay={L + 0.66} color="rgba(255,255,255,0.92)" />
+                  <MottoLine text="Trusted Advisors Since 2003." delay={L + 0.83} color="#D9B020" />
+                </div>
               </div>
+
+              {/* Subhead */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: L + 0.74, duration: 0.7, ease: EASE }}
+                className="text-white/65 text-lg md:text-xl leading-relaxed max-w-lg"
+              >
+                Premium residences in Patna &amp; Ranchi — RERA verified, structurally certified, delivered on time.
+              </motion.p>
+
+              {/* CTAs */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: L + 0.9, duration: 0.65, ease: EASE }}
+                className="flex flex-col sm:flex-row gap-4 mt-1"
+              >
+                <motion.div className="relative" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
+                  transition={{ duration: 0.22, ease: EASE }}>
+                  <motion.span
+                    className="absolute inset-0 rounded-full bg-primary"
+                    animate={{ scale: [1, 1.22, 1], opacity: [0.45, 0, 0.45] }}
+                    transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: L + 1.2 }}
+                  />
+                  <Link to="/projects"
+                    className="relative inline-flex items-center gap-2.5 bg-primary hover:bg-primary-dark
+                               text-white font-semibold px-7 py-3.5 rounded-full shadow-xl
+                               transition-colors duration-300"
+                  >
+                    Explore Projects
+                    <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 17L17 7M17 7H7M17 7v10"/>
+                      </svg>
+                    </span>
+                  </Link>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.2 }}>
+                  <Link to="/contact"
+                    className="inline-flex items-center gap-2 border border-white/35
+                               text-white hover:bg-white/10 font-semibold px-7 py-3.5 rounded-full
+                               transition-all duration-300 backdrop-blur-sm"
+                  >
+                    Enquire Now
+                  </Link>
+                </motion.div>
+              </motion.div>
             </div>
 
-            {/* Subhead */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: L + 0.72, duration: 0.7, ease: EASE }}
-              className="text-white/70 text-lg md:text-xl leading-relaxed max-w-lg"
-            >
-              Premium 3 BHK residences in Patna &amp; Ranchi — RERA registered, structurally certified, delivered on time.
-            </motion.p>
+            {/* RIGHT: floating stat cards — desktop only */}
+            <div className="hidden lg:flex flex-col gap-4 items-end flex-shrink-0">
 
-            {/* CTAs */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: L + 0.88, duration: 0.65, ease: EASE }}
-              className="flex flex-col sm:flex-row gap-4 mt-2"
-            >
-              <Link to="/projects"
-                className="btn-press inline-flex items-center gap-2.5 bg-primary hover:bg-primary-dark
-                           text-white font-semibold px-7 py-3.5 rounded-full shadow-lg
-                           transition-colors duration-300"
+              {/* Stat cards */}
+              {[
+                { delay: L + 0.9,  value: '20+',  label: 'Years Active',    sub: 'Est. 2003' },
+                { delay: L + 1.05, value: '500+', label: 'Families Served', sub: 'Across Bihar' },
+                { delay: L + 1.2,  value: '7',    label: 'Projects',        sub: 'RERA Verified' },
+              ].map((s, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: 48, filter: 'blur(8px)' }}
+                  animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
+                  transition={{ delay: s.delay, duration: 0.7, ease: EASE }}
+                  className="liquid-glass rounded-2xl px-6 py-4 w-44 flex flex-col gap-0.5"
+                >
+                  <span className="font-display font-bold text-3xl text-white leading-none">
+                    {s.value}
+                  </span>
+                  <span className="text-white/85 text-sm font-semibold">{s.label}</span>
+                  <span className="text-white/40 text-[11px] tracking-wider uppercase">{s.sub}</span>
+                </motion.div>
+              ))}
+
+              {/* Booking-open property card */}
+              <motion.div
+                initial={{ opacity: 0, x: 48, filter: 'blur(8px)' }}
+                animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
+                transition={{ delay: L + 1.38, duration: 0.75, ease: EASE }}
+                className="liquid-glass rounded-2xl overflow-hidden w-52"
               >
-                Explore Projects
-                <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 17L17 7M17 7H7M17 7v10"/>
-                  </svg>
-                </span>
-              </Link>
-              <Link to="/contact"
-                className="btn-press inline-flex items-center gap-2 border border-white/40
-                           text-white hover:bg-white/10 font-semibold px-7 py-3.5 rounded-full
-                           transition-colors duration-300 backdrop-blur-sm"
-              >
-                Enquire Now
-              </Link>
-            </motion.div>
+                <div className="relative h-28 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=75"
+                    alt="Premium Enclave"
+                    className="w-full h-full object-cover scale-110"
+                  />
+                  <div className="absolute inset-0 bg-secondary/30" />
+                  <span className="absolute top-2 left-2 bg-primary text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded-full">
+                    Booking Open
+                  </span>
+                </div>
+                <div className="px-4 py-3">
+                  <p className="text-white/90 font-semibold text-sm leading-snug">Premium Enclave</p>
+                  <p className="text-white/45 text-[11px] mt-0.5">New AG Colony, Patna</p>
+                  <Link to="/projects/hari-enclave-new-ag-colony"
+                    className="mt-2.5 inline-flex items-center gap-1.5 text-primary text-[11px] font-bold tracking-wide hover:gap-2.5 transition-all duration-300"
+                  >
+                    View Details
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
           </div>
-
-          {/* Floating trust indicators */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: L + 1.0, duration: 0.7, ease: EASE }}
-            className="absolute bottom-10 right-6 lg:right-16 hidden lg:flex flex-col gap-3"
-          >
-            {['2 RERA Registered Projects', '32+ Families Housed'].map((label, i) => (
-              <div key={i} className="flex items-center gap-2.5 text-white/60 text-xs font-semibold tracking-wider">
-                <span className="w-4 h-px bg-primary" />
-                {label}
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
 
-        {/* Scroll chevron */}
+        {/* ── Mouse scroll indicator ── */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 9, 0] }}
-          transition={{ opacity: { delay: L + 1.1, duration: 0.5 }, y: { delay: L + 1.1, repeat: Infinity, duration: 2, ease: 'easeInOut' } }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/35 z-10"
+          animate={{ opacity: 1 }}
+          transition={{ delay: L + 1.4, duration: 0.6 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7"/>
-          </svg>
+          <div className="w-6 h-9 rounded-full border border-white/25 flex items-start justify-center pt-1.5">
+            <motion.div
+              animate={{ y: [0, 14, 0], opacity: [1, 0, 1] }}
+              transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+              className="w-1 h-2 rounded-full bg-white/50"
+            />
+          </div>
+          <motion.span
+            animate={{ opacity: [0.4, 0.8, 0.4] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="text-white/35 text-[9px] font-semibold tracking-[0.3em] uppercase"
+          >
+            Scroll
+          </motion.span>
         </motion.div>
+
       </section>
 
       {/* ── Marquee ticker ─────────────────────────────────────────── */}
@@ -614,7 +709,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="01 — Portfolio"
               title={<>Our<br />Projects</>}
-              subtitle="Two RERA-registered developments in Patna's most strategically located residential corridors."
+              subtitle="RERA-registered residential developments across Patna's most sought-after neighbourhoods."
             />
             <Link to="/projects"
               className="btn-press self-start md:self-end inline-flex items-center gap-2 border border-secondary/20
@@ -682,7 +777,7 @@ export default function Home() {
               variants={stagger}
               className="flex flex-col gap-3 order-1 lg:order-2"
             >
-              <SectionHeading eyebrow="02 — What We Build" title={<>End-to-End<br />Expertise</>} />
+              <SectionHeading eyebrow="02 — What We Do" title={<>End-to-End<br />Expertise</>} />
               <motion.p variants={fadeUp} className="text-muted text-lg mt-2 mb-2 leading-relaxed">
                 Managed by highly qualified engineers, architects, and administrators — from foundation to handover.
               </motion.p>
@@ -719,7 +814,7 @@ export default function Home() {
             <div>
               <SectionHeading
                 eyebrow="03 — Why Choose Us"
-                title={<>Built on Values.<br />Backed by 20 Years.</>}
+                title={<>Guided by Values.<br />Backed by 20 Years.</>}
                 light
               />
               <motion.div
@@ -730,10 +825,14 @@ export default function Home() {
               >
                 {benefits.map((b, i) => (
                   <motion.div key={b.title} variants={fadeUp} custom={i}
+                    whileHover={{ y: -4, scale: 1.02 }}
+                    transition={{ duration: 0.28, ease: EASE }}
                     className="flex flex-col gap-2.5 p-4 rounded-2xl bg-white/[0.04] border border-white/[0.07]
-                               hover:bg-white/[0.08] transition-colors duration-300"
+                               hover:bg-white/[0.09] hover:border-primary/40 hover:shadow-[0_0_24px_rgba(13,98,69,0.18)]
+                               transition-all duration-300 cursor-default"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-white/10 text-white/80 flex items-center justify-center">
+                    <div className="w-9 h-9 rounded-xl bg-white/10 text-white/80 flex items-center justify-center
+                                    group-hover:bg-primary/30 transition-colors duration-300">
                       {b.icon}
                     </div>
                     <h4 className="font-semibold text-white text-base leading-snug">{b.title}</h4>
@@ -831,24 +930,24 @@ export default function Home() {
             className="flex flex-col items-center gap-5"
           >
             <motion.span variants={fadeUp} className="text-white/60 text-[10px] font-semibold tracking-[0.25em] uppercase">
-              Now Accepting Bookings
+              Find Your Perfect Home
             </motion.span>
             <motion.h2 variants={fadeUp}
               className="font-display font-bold text-[clamp(2rem,5vw,3.25rem)] text-white leading-[1.1]"
             >
-              Tribhuvan Hari Enclave<br />
-              <span className="text-white/70 font-normal italic text-[0.85em]">Premium 3 BHK · Danapur, Patna</span>
+              Homes in Patna's<br />
+              <span className="text-white/70 font-normal italic text-[0.85em]">Finest Locations — Expert Guidance</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-white/65 text-base">
-              Limited units · Pricing on request · RERA: BRERAP00125-2/15/R-1539/2023
+              Verified listings · Transparent pricing · No hidden charges
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mt-2">
-              <Link to="/projects/hari-enclave-new-ag-colony"
+              <Link to="/projects"
                 className="btn-press inline-flex items-center gap-2.5 bg-white text-primary
                            hover:bg-surface font-semibold px-7 py-3.5 rounded-full
                            transition-colors duration-300 shadow-lg"
               >
-                View Project Details
+                Browse All Properties
                 <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
