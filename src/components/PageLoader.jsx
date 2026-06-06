@@ -35,25 +35,28 @@ export default function PageLoader() {
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: 'radial-gradient(ellipse 60% 45% at 50% 50%, rgba(193,68,14,0.12) 0%, transparent 70%)',
+              background: 'radial-gradient(ellipse 60% 45% at 50% 50%, rgba(13,98,69,0.18) 0%, transparent 70%)',
             }}
           />
 
           {/* Center content */}
           <div className="relative flex flex-col items-center gap-6 px-8 max-w-lg w-full text-center">
 
-            {/* Logo — white card so brand colours show on dark background */}
+            {/* Brand wordmark */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.85, filter: 'blur(8px)' }}
+              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
               transition={{ delay: 0.1, duration: 0.7, ease: EASE }}
-              className="bg-white rounded-2xl px-5 py-3 shadow-xl"
+              className="flex flex-col items-center gap-1"
             >
-              <img
-                src="/logo.png"
-                alt="Mamta Estates"
-                className="h-14 w-auto object-contain"
-              />
+              <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-2xl">
+                <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <p className="font-display font-bold text-white text-xl tracking-tight mt-1">Mamta Estates</p>
+              <p className="text-white/35 text-[10px] tracking-[0.25em] uppercase">Boring Road, Patna</p>
             </motion.div>
 
             {/* Divider line */}
@@ -64,38 +67,36 @@ export default function PageLoader() {
               className="w-8 h-px bg-primary origin-left"
             />
 
-            {/* Motto — line 1 */}
+            {/* Tagline */}
             <div className="flex flex-col items-center gap-1">
               <motion.p
                 initial={{ opacity: 0, y: 20, filter: 'blur(6px)' }}
                 animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 transition={{ delay: 0.45, duration: 0.8, ease: EASE }}
                 className="font-display font-semibold italic text-white"
-                style={{ fontSize: 'clamp(1.6rem, 5vw, 2.5rem)', lineHeight: 1.2, letterSpacing: '-0.01em' }}
+                style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)', lineHeight: 1.2, letterSpacing: '-0.01em' }}
               >
-                Sapna ho Sakaar Aapka,
+                Your Home,
               </motion.p>
-
-              {/* Motto — line 2 */}
               <motion.p
                 initial={{ opacity: 0, y: 20, filter: 'blur(6px)' }}
                 animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 transition={{ delay: 0.6, duration: 0.8, ease: EASE }}
                 className="font-display font-semibold italic text-primary"
-                style={{ fontSize: 'clamp(1.6rem, 5vw, 2.5rem)', lineHeight: 1.2, letterSpacing: '-0.01em' }}
+                style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)', lineHeight: 1.2, letterSpacing: '-0.01em' }}
               >
-                Ek Ghar ho Apna Aapka
+                Our Promise.
               </motion.p>
             </div>
 
-            {/* Tagline translation */}
+            {/* Est. line */}
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.6, ease: EASE }}
               className="text-white/30 text-xs tracking-widest uppercase"
             >
-              Your dream, your home — since 2004
+              Trusted real estate advisory — since 2003
             </motion.p>
 
             {/* Skeleton shimmer bars */}

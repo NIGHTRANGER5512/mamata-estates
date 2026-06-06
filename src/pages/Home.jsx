@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { projects, testimonials } from '../data/projects'
 import SEO from '../components/SEO'
+import StickyCardStack from '../components/StickyCardStack'
 
 const EASE  = [0.23, 1, 0.32, 1]
 const EASE2 = [0.32, 0.72, 0, 1]
@@ -736,71 +737,81 @@ export default function Home() {
       {/* ╔══════════════════════════════════════════════════════════╗
           ║  SERVICES — parallax image                               ║
           ╚══════════════════════════════════════════════════════════╝ */}
-      <section ref={svcRef} className="py-16 md:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* ╔══════════════════════════════════════════════════════════╗
+          ║  SERVICES — skiper17 sticky card stack + service list    ║
+          ╚══════════════════════════════════════════════════════════╝ */}
+      {/* Outer wrapper height drives the GSAP pin scroll distance */}
+      <div
+        className="bg-surface"
+        style={{ height: `calc(100vh * 4 + 56rem)` }}
+      >
+        {/* Sticky container that holds both columns */}
+        <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-            {/* Parallax bezel image */}
-            <motion.div
-              initial={{ opacity: 0, x: -40, filter: 'blur(6px)' }}
-              whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.9, ease: EASE }}
-              className="relative order-2 lg:order-1"
-            >
-              <div className="p-2 rounded-[2rem] bg-black/[0.04] ring-1 ring-black/[0.07] overflow-hidden">
-                <div className="rounded-[calc(2rem-0.5rem)] overflow-hidden h-[500px]">
-                  <motion.img
-                    style={{ y: svcImgY, scale: 1.18 }}
-                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
-                    alt="Construction" loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+              {/* LEFT: sticky card stack */}
               <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, x: -40, filter: 'blur(6px)' }}
+                whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.3, duration: 0.6, ease: EASE }}
-                className="absolute -bottom-6 -right-4 bg-primary text-white rounded-2xl p-5 shadow-2xl hidden md:block"
+                transition={{ duration: 0.9, ease: EASE }}
+                className="relative order-2 lg:order-1 h-[500px]"
               >
-                <p className="font-display font-bold text-4xl leading-none">20<span className="text-white/70 text-2xl">+</span></p>
-                <p className="text-xs text-white/70 mt-1 tracking-wider uppercase">Years</p>
+                <StickyCardStack
+                  cards={[
+                    { id: 1, image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80', alt: 'Residential property' },
+                    { id: 2, image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80', alt: 'Construction site' },
+                    { id: 3, image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80', alt: 'Modern home exterior' },
+                    { id: 4, image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Luxury apartment' },
+                  ]}
+                />
+                {/* Floating badge */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.6, ease: EASE }}
+                  className="absolute -bottom-6 -right-4 bg-primary text-white rounded-2xl p-5 shadow-2xl hidden md:block z-20"
+                >
+                  <p className="font-display font-bold text-4xl leading-none">20<span className="text-white/70 text-2xl">+</span></p>
+                  <p className="text-xs text-white/70 mt-1 tracking-wider uppercase">Years</p>
+                </motion.div>
               </motion.div>
-            </motion.div>
 
-            {/* Service list */}
-            <motion.div
-              initial="hidden" whileInView="visible"
-              viewport={{ once: true }}
-              variants={stagger}
-              className="flex flex-col gap-3 order-1 lg:order-2"
-            >
-              <SectionHeading eyebrow="02 — What We Do" title={<>End-to-End<br />Expertise</>} />
-              <motion.p variants={fadeUp} className="text-muted text-lg mt-2 mb-2 leading-relaxed">
-                Managed by highly qualified engineers, architects, and administrators — from foundation to handover.
-              </motion.p>
-              <div className="flex flex-col divide-y divide-gray-200/60">
-                {services.map((s, i) => (
-                  <motion.div key={s.title} variants={fadeUp} custom={i}
-                    className="flex items-start gap-4 py-5 group/item"
-                  >
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5
-                                    group-hover/item:bg-primary group-hover/item:text-white transition-colors duration-300">
-                      {s.icon}
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-secondary text-base">{s.title}</h4>
-                      <p className="text-muted text-sm mt-0.5 leading-relaxed">{s.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+              {/* RIGHT: service list */}
+              <motion.div
+                initial="hidden" whileInView="visible"
+                viewport={{ once: true }}
+                variants={stagger}
+                className="flex flex-col gap-3 order-1 lg:order-2"
+              >
+                <SectionHeading eyebrow="02 — What We Do" title={<>End-to-End<br />Expertise</>} />
+                <motion.p variants={fadeUp} className="text-muted text-lg mt-2 mb-2 leading-relaxed">
+                  Managed by highly qualified engineers, architects, and administrators — from foundation to handover.
+                </motion.p>
+                <div className="flex flex-col divide-y divide-gray-200/60">
+                  {services.map((s, i) => (
+                    <motion.div key={s.title} variants={fadeUp} custom={i}
+                      className="flex items-start gap-4 py-5 group/item"
+                    >
+                      <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5
+                                      group-hover/item:bg-primary group-hover/item:text-white transition-colors duration-300">
+                        {s.icon}
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-secondary text-base">{s.title}</h4>
+                        <p className="text-muted text-sm mt-0.5 leading-relaxed">{s.desc}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* ── Second marquee (inverted) ─────────────────────────────── */}
       <Marquee dark />

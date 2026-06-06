@@ -12,8 +12,9 @@ const fadeUp = {
 
 // Maps a project id prefix → contact form subject value
 const PROJECT_TO_SUBJECT = {
-  'shivam': 'shivam',
-  'hari':   'hari',
+  'hari':   'premium-enclave',
+  'shivam': 'emerald-enclave',
+  'kailasam': 'upcoming',
 }
 
 export default function Contact() {
@@ -221,9 +222,9 @@ export default function Contact() {
                       className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm text-secondary focus:outline-none focus:border-primary transition-colors"
                     >
                       <option value="">Select subject...</option>
-                      <option value="hari">Hari Enclave – New AG Colony</option>
-                      <option value="shivam">Shivam Residency – New Mahavir Colony</option>
-                      <option value="kailasam">Kailasam Legacy – Upcoming</option>
+                      <option value="premium-enclave">Premium Enclave – New AG Colony</option>
+                      <option value="emerald-enclave">Emerald Enclave – New Mahavir Colony</option>
+                      <option value="upcoming">Upcoming Signature Project</option>
                       <option value="general">General Inquiry</option>
                       <option value="other">Other / Business</option>
                     </select>

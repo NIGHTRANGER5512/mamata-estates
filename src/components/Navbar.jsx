@@ -84,14 +84,15 @@ export default function Navbar() {
           {/* Navbar content — sits above gloss layer */}
           <div className="relative flex items-center justify-between px-5 py-3" style={{ zIndex: 1 }}>
 
-            {/* Logo */}
+            {/* Wordmark */}
             <Link to="/" className="flex items-center gap-2.5 flex-shrink-0">
-              <div className={`rounded-xl transition-all duration-300 ${isTransparent ? 'bg-white/15 backdrop-blur-sm p-1' : ''}`}>
-                <img
-                  src="/logo.png"
-                  alt="Mamta Estates"
-                  className="h-9 w-auto object-contain"
-                />
+              <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300
+                ${isTransparent ? 'bg-white/15 border border-white/25' : 'bg-primary'}`}
+              >
+                <svg className="w-4.5 h-4.5 text-white" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
               </div>
               <div className="leading-tight">
                 <span className={`font-display font-bold text-base block transition-colors duration-300
@@ -237,14 +238,3 @@ export default function Navbar() {
   )
 }
 
-function BuildingIcon({ transparent }) {
-  return (
-    <svg
-      className={`w-8 h-8 flex-shrink-0 transition-colors duration-300 ${transparent ? 'text-white' : 'text-primary'}`}
-      fill="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path d="M1 22V9l7-4v2l6-4v19H1zm2-2h2v-2H3v2zm0-4h2v-2H3v2zm0-4h2v-2H3v2zm4 8h2v-2H7v2zm0-4h2v-2H7v2zm0-4h2v-2H7v2zm0-4h2V8L7 9.5V10zm4 12h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2V6l-2 1.33V10zm4 12h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2V6l-2 1.33V10z" />
-    </svg>
-  )
-}
